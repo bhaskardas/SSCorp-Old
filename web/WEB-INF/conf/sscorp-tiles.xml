@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!DOCTYPE tiles-definitions PUBLIC "-//Apache Software Foundation//DTD Tiles Configuration 1.1//EN"
+	"http://jakarta.apache.org/struts/dtds/tiles-config_1_1.dtd">
+<!--
+    Document   : sscorp-tiles.xml
+    Created on : 27 September, 2009, 5:48 PM
+    Author     : Bhaskar Das
+    Description:
+        Purpose of the document follows.
+                To divide the whole web page into different Jsps.
+-->
+
+<tiles-definitions>
+
+	<definition name="homepage" page="/jsp/layout/layout.jsp">
+		<put name="header" value="/jsp/layout/header.jsp" type="page" />
+		<put name="menu" value="/jsp/layout/menu.jsp" />
+		<!--<put name="moduleTop" value="bst.sscorp.moduleTop" />-->
+		<put name="body" value="/jsp/layout/blank.jsp" type="page" />
+		<put name="footer" value="/jsp/layout/footer.jsp" type="page" />
+	</definition>
+
+	<!--<definition name="bst.sscorp.moduleTop" page="/jsp/layout/moduleTop.jsp">
+		<put name="breadcrumb" value="/jsp/layout/breadCrumb.jsp" type="page" />
+		<put name="heading" value="/jsp/layout/blank.jsp" type="page" />
+	</definition>-->
+
+    <definition name="sscorp.homePage" page="/jsp/layout/layout.jsp" extends="homepage">
+		<put name="body" value="/jsp/sscorp/home.jsp"></put>
+	</definition>
+
+    <definition name="sscorp.queryForm" page="/jsp/layout/layout.jsp" extends="homepage">
+		<put name="body" value="/jsp/sscorp/queryDetails/queryDetails.jsp"></put>
+	</definition>
+
+    <definition name="sscorp.menuPage" page="/jsp/layout/layout.jsp" extends="homepage">
+		<put name="body" value="/global/layout/menu.jsp"></put>
+	</definition>
+
+    <definition name="sscorp.companyProfile" page="/jsp/layout/layout.jsp" extends="homepage">
+		<put name="body" value="/jsp/sscorp/companyProfile/companyProfile.jsp"></put>
+	</definition>
+
+    <definition name="sscorp.productDetails" page="/jsp/layout/layout.jsp" extends="homepage">
+		<put name="body" value="/jsp/sscorp/products/productDetails.jsp"></put>
+	</definition>
+
+    <definition name="sscorp.productCategory" page="/jsp/layout/layout.jsp" extends="homepage">
+		<put name="body" value="/jsp/sscorp/products/dispProdCategory.jsp"></put>
+	</definition>
+
+    <definition name="sscorp.projectList" page="/jsp/layout/layout.jsp" extends="homepage">
+		<put name="body" value="/jsp/sscorp/projects/projectList.jsp"></put>
+	</definition>
+
+    <definition name="sscorp.contactPage" page="/jsp/layout/layout.jsp" extends="homepage">
+		<put name="body" value="/jsp/sscorp/contactUs/contactUs.jsp"></put>
+	</definition>
+
+</tiles-definitions>

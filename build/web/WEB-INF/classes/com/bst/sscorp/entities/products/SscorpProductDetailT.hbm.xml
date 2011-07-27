@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 24 Mar, 2010 10:09:47 PM by Hibernate Tools 3.2.1.GA -->
+<hibernate-mapping>
+    <class name="com.bst.sscorp.entities.products.SscorpProductDetailT" table="sscorp_product_detail_t">
+        <id name="prodDetId" type="java.lang.Integer">
+            <column name="prod_det_id" />
+            <generator class="increment" />
+        </id>
+        <many-to-one name="sscorpProductsM" class="com.bst.sscorp.entities.products.SscorpProductsM" fetch="select">
+            <column name="product_id" />
+        </many-to-one>
+        <many-to-one name="sscorpProductSizeM" class="com.bst.sscorp.entities.products.SscorpProductSizeM" fetch="select">
+            <column name="prod_size_id" />
+        </many-to-one>
+        <many-to-one name="sscorpProductsCategoryM" class="com.bst.sscorp.entities.products.SscorpProductsCategoryM" fetch="select">
+            <column name="product_cat_id" />
+        </many-to-one>
+        <many-to-one name="sscorpProductMaterialM" class="com.bst.sscorp.entities.products.SscorpProductMaterialM" fetch="select">
+            <column name="prod_mat_id" />
+        </many-to-one>
+        <many-to-one name="sscorpProductDescM" class="com.bst.sscorp.entities.products.SscorpProductDescM" fetch="select">
+            <column name="prod_desc_id" />
+        </many-to-one>
+        <property name="prodPhotoAttachName" type="string">
+            <column name="prod_photo_attachName" length="100" />
+        </property>
+    </class>
+</hibernate-mapping>

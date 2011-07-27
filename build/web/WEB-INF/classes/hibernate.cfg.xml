@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+  <session-factory>
+    <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
+    <property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+    <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/sscorp_old</property>
+    <property name="hibernate.connection.username">root</property>
+    <property name="hibernate.connection.password">rana@1stpass</property>
+    <property name="hibernate.show_sql">true</property>
+
+    <!-- hibernate.cfg.xml -->
+        <property name="hibernate.c3p0.acquire_increment">3</property>
+        <property name="hibernate.c3p0.min_size">5</property>
+        <property name="hibernate.c3p0.max_size">20</property>
+        <property name="hibernate.c3p0.timeout">1800</property>
+        <property name="hibernate.c3p0.max_statements">50</property>
+        <property name="hibernate.connection.provider_class">org.hibernate.connection.C3P0ConnectionProvider</property>
+    <!-- no "connection.pool_size" entry! -->
+
+    <mapping resource="com/bst/sscorp/entities/companyprofile/SscorpCompanyProfileM.hbm.xml"/>
+    <mapping resource="com/bst/sscorp/entities/menu/SscorpMenuM.hbm.xml"/>
+    <mapping resource="com/bst/sscorp/entities/querydetails/SscorpQueryDetailsT.hbm.xml"/>
+    <mapping resource="com/bst/sscorp/entities/customerdetails/SscorpCustomerDetailsT.hbm.xml"/>
+    <mapping resource="com/bst/sscorp/entities/achievments/SscorpAchievmentsM.hbm.xml"/>
+    <mapping resource="com/bst/sscorp/entities/address/SscorpAddressM.hbm.xml"/>
+    <mapping resource="com/bst/sscorp/entities/mobilenumbers/SscorpPhoneNumbersM.hbm.xml"/>
+    <mapping resource="com/bst/sscorp/entities/projects/SscorpProjectsM.hbm.xml"/>
+    <mapping resource="com/bst/sscorp/entities/projects/SscorpProjectCategoryM.hbm.xml"/>
+    <mapping resource="com/bst/sscorp/entities/products/SscorpProductSizeM.hbm.xml"/>
+    <mapping resource="com/bst/sscorp/entities/products/SscorpProductMaterialM.hbm.xml"/>
+    <mapping resource="com/bst/sscorp/entities/products/SscorpProductDescM.hbm.xml"/>
+    <mapping resource="com/bst/sscorp/entities/products/SscorpProductDetailT.hbm.xml"/>
+    <mapping resource="com/bst/sscorp/entities/products/SscorpProductsM.hbm.xml"/>
+    <mapping resource="com/bst/sscorp/entities/products/SscorpProductsCategoryM.hbm.xml"/>
+  </session-factory>
+</hibernate-configuration>

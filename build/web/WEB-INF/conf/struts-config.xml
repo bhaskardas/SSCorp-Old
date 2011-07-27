@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!DOCTYPE struts-config PUBLIC
+          "-//Apache Software Foundation//DTD Struts Configuration 1.2//EN"
+          "http://jakarta.apache.org/struts/dtds/struts-config_1_2.dtd">
+
+
+<struts-config>
+    <form-beans>
+        <form-bean name="saveQueryDetails" type="com.bst.sscorp.formclasses.querydetails.QueryDetailsForm"></form-bean>
+        <form-bean name="productDetailsForm" type="com.bst.sscorp.formclasses.products.ProductDetailsForm"></form-bean>
+        <form-bean name="generalForm" type="com.bst.sscorp.formclasses.general.GeneralForm"></form-bean>
+    </form-beans>
+    
+    <global-exceptions>
+    
+    </global-exceptions>
+
+    <global-forwards>
+        <forward name="welcome"  path="/Welcome.do"/>
+    </global-forwards>
+
+    <action-mappings>
+        <action path="/Welcome" forward="/welcomeStruts.jsp"/>
+
+        <action path="/home" type="com.bst.sscorp.actionclasses.homepage.HomePageAction">
+            <forward name="success" path="sscorp.homePage"/>
+        </action>
+
+        <action path="/showQueryPage" forward="sscorp.queryForm" name="saveQueryDetails"/>
+
+        <action path="/saveQuery" type="com.bst.sscorp.actionclasses.querydetails.SaveQueryDetailsAction"
+                name="saveQueryDetails">
+            <forward name="showMessage" path="sscorp.queryForm"></forward>
+        </action>
+
+        <action path="/companyProfile" type="com.bst.sscorp.actionclasses.companyprofile.CompanyProfileAction">
+            <forward name="showPage" path="sscorp.companyProfile"></forward>
+        </action>
+
+        <action path="/fetchProductDetails" type="com.bst.sscorp.actionclasses.products.FetchProductDetailsAction"
+                name="productDetailsForm">
+            <forward name="showProductDetails" path="sscorp.productDetails"></forward>
+        </action>
+
+        <action path="/fetchProductCategory" type="com.bst.sscorp.actionclasses.products.FetchProdCategoriesAction"
+                name="productDetailsForm">
+            <forward name="showProductCategory" path="sscorp.productCategory"></forward>
+        </action>
+
+        <action path="/showNextProductPage" type="com.bst.sscorp.actionclasses.products.FetchProductDetailsAction"
+                name="productDetailsForm" attribute="nextProductPage">
+            <forward name="showProductDetails" path="sscorp.productDetails"></forward>
+        </action>
+        
+        <action path="/fetchProjectList" type="com.bst.sscorp.actionclasses.projects.FetchProjectDetailsAction"
+                name="generalForm">
+            <forward name="showProjectList" path="sscorp.projectList"></forward>
+        </action>
+
+        <action path="/showNextProjectsPage" type="com.bst.sscorp.actionclasses.projects.FetchProjectDetailsAction"
+                name="generalForm" attribute="nextProjectPage">
+            <forward name="showProjectList" path="sscorp.projectList"></forward>
+        </action>
+
+        <action path="/contactUs" type="com.bst.sscorp.actionclasses.contactus.ContactPageAction">
+            <forward name="showContactPage" path="sscorp.contactPage"></forward>
+        </action>
+
+        <action path="/showMoreImages" type="com.bst.sscorp.actionclasses.products.FetchMoreProdImages"
+                name="productDetailsForm" attribute="imagesForm">
+            <forward name="showImages" path="/jsp/sscorp/products/showMoreImages.jsp"></forward>
+        </action>
+
+    </action-mappings>
+    
+   <!--<controller processorClass="org.apache.struts.tiles.TilesRequestProcessor"/>-->
+   <controller processorClass="com.bst.sscorp.controller.SSCorpRequestProcessor"/>
+
+    <message-resources parameter="com/bst/sscorp/config/ApplicationResource"/>
+    
+    <!-- ========================= Tiles plugin ===============================-->
+    <!--
+    This plugin initialize Tiles definition factory. This later can takes some
+    parameters explained here after. The plugin first read parameters from
+    web.xml, thenoverload them with parameters defined here. All parameters
+    are optional.
+    The plugin should be declared in each struts-config file.
+    - definitions-config: (optional)
+    Specify configuration file names. There can be several comma
+    separated file names (default: ?? )
+    - moduleAware: (optional - struts1.1)
+    Specify if the Tiles definition factory is module aware. If true
+    (default), there will be one factory for each Struts module.
+    If false, there will be one common factory for all module. In this
+    later case, it is still needed to declare one plugin per module.
+    The factory will be initialized with parameters found in the first
+    initialized plugin (generally the one associated with the default
+    module).
+    true : One factory per module. (default)
+    false : one single shared factory for all modules
+    - definitions-parser-validate: (optional)
+    Specify if xml parser should validate the Tiles configuration file.
+    true : validate. DTD should be specified in file header (default)
+    false : no validation
+
+    Paths found in Tiles definitions are relative to the main context.
+    -->
+    <plug-in className="org.apache.struts.tiles.TilesPlugin" >
+        <set-property property="definitions-config" value="/WEB-INF/conf/sscorp-tiles.xml" />
+        <set-property property="moduleAware" value="true" />
+    </plug-in>
+    
+    <!-- ========================= Validator plugin ================================= -->
+    <plug-in className="org.apache.struts.validator.ValidatorPlugIn">
+        <set-property
+            property="pathnames"
+            value="/WEB-INF/conf/validator-rules.xml,/WEB-INF/conf/validation.xml"/>
+    </plug-in>
+  
+</struts-config>

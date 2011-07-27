@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 6 Dec, 2009 5:30:45 PM by Hibernate Tools 3.2.1.GA -->
+<hibernate-mapping>
+  <class name="com.bst.sscorp.entities.querydetails.SscorpQueryDetailsT" table="sscorp_queryDetails_t">
+    <id name="queryId" type="java.lang.Integer">
+      <column name="query_id"/>
+      <generator class="increment"/>
+    </id>
+    <many-to-one class="com.bst.sscorp.entities.companyprofile.SscorpCompanyProfileM" fetch="select" name="sscorpCompanyProfileM">
+      <column name="company_id"/>
+    </many-to-one>
+    <many-to-one class="com.bst.sscorp.entities.customerdetails.SscorpCustomerDetailsT" fetch="select" name="sscorpCustomerDetailsT">
+      <column name="customer_id"/>
+    </many-to-one>
+    <property name="query" type="string">
+      <column length="3000" name="query" not-null="true"/>
+    </property>
+    <property name="querySubject" type="string">
+      <column length="100" name="query_subject"/>
+    </property>
+    <property name="queryDate" type="timestamp">
+      <column length="19" name="query_date" not-null="true"/>
+    </property>
+    <property name="hearAboutUs" type="string">
+      <column length="1000" name="hear_about_us"/>
+    </property>
+  </class>
+</hibernate-mapping>

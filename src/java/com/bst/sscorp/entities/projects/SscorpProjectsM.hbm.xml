@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 6 Apr, 2010 7:32:23 AM by Hibernate Tools 3.2.1.GA -->
+<hibernate-mapping>
+    <class name="com.bst.sscorp.entities.projects.SscorpProjectsM" table="sscorp_projects_m">
+        <id name="projectId" type="java.lang.Integer">
+            <column name="project_id" />
+            <generator class="increment"/>
+        </id>
+        <many-to-one name="sscorpAddressM" class="com.bst.sscorp.entities.address.SscorpAddressM" fetch="select">
+            <column name="address_id" />
+        </many-to-one>
+        <many-to-one name="sscorpProjectCategoryM" class="com.bst.sscorp.entities.projects.SscorpProjectCategoryM" fetch="select">
+            <column name="project_cat_id" />
+        </many-to-one>
+        <property name="projectName" type="string">
+            <column name="project_name" length="200" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>

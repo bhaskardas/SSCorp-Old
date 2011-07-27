@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 6 Dec, 2009 5:30:45 PM by Hibernate Tools 3.2.1.GA -->
+<hibernate-mapping>
+  <class name="com.bst.sscorp.entities.menu.SscorpMenuM" table="sscorp_menu_m">
+    <id name="menuId" type="java.lang.Integer">
+      <column name="menu_id"/>
+      <generator class="increment"/>
+    </id>
+    <many-to-one class="com.bst.sscorp.entities.companyprofile.SscorpCompanyProfileM" fetch="select" name="sscorpCompanyProfileM">
+      <column name="company_id"/>
+    </many-to-one>
+    <property name="menuName" type="string">
+      <column length="50" name="menu_name" not-null="true" unique="true" />
+    </property>
+    <property name="menuPosition" type="int">
+      <column name="menu_position" not-null="true"/>
+    </property>
+    <property name="menuUrl" type="string">
+      <column length="100" name="menu_url"/>
+    </property>
+    <property name="additionalMenuUrl" type="string">
+      <column length="200" name="additional_menu_url"/>
+    </property>
+  </class>
+</hibernate-mapping>

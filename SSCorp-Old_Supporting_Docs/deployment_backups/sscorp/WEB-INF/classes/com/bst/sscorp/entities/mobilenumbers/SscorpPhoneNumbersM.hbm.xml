@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 9 Apr, 2010 10:05:31 PM by Hibernate Tools 3.2.1.GA -->
+<hibernate-mapping>
+    <class name="com.bst.sscorp.entities.mobilenumbers.SscorpPhoneNumbersM" table="sscorp_phone_numbers_m">
+        <id name="phoneId" type="java.lang.Integer">
+            <column name="phone_id" />
+            <generator class="increment" />
+        </id>
+        <many-to-one name="sscorpCompanyProfileM" class="com.bst.sscorp.entities.companyprofile.SscorpCompanyProfileM" fetch="select">
+            <column name="company_id" />
+        </many-to-one>
+        <property name="phoneOwner" type="string">
+            <column name="phone_owner" length="100" not-null="true" />
+        </property>
+        <property name="countryCode" type="string">
+            <column name="country_code" length="10" />
+        </property>
+        <property name="stdCode" type="string">
+            <column name="std_code" length="10" />
+        </property>
+        <property name="phoneNumber" type="string">
+            <column name="phone_number" length="20" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>

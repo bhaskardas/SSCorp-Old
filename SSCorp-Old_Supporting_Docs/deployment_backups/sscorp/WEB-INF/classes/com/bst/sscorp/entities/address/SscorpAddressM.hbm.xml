@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 23 Dec, 2009 12:06:02 AM by Hibernate Tools 3.2.1.GA -->
+<hibernate-mapping>
+  <class name="com.bst.sscorp.entities.address.SscorpAddressM" table="sscorp_address_m">
+    <id name="addressId" type="java.lang.Integer">
+      <column name="address_id"/>
+      <generator class="increment"/>
+    </id>
+    <many-to-one class="com.bst.sscorp.entities.companyprofile.SscorpCompanyProfileM" fetch="select" name="sscorpCompanyProfileM">
+      <column name="company_id"/>
+    </many-to-one>
+    <property name="address" type="string">
+      <column length="200" name="address" not-null="true"/>
+    </property>
+    <property name="city" type="string">
+      <column length="50" name="city"/>
+    </property>
+    <property name="province" type="string">
+      <column length="50" name="province"/>
+    </property>
+    <property name="country" type="string">
+      <column length="50" name="country"/>
+    </property>
+    <property name="zipcode" type="string">
+      <column length="20" name="zipcode"/>
+    </property>
+    <set name="sscorpProjectsMs" inverse="true">
+            <key>
+                <column name="address_id" />
+            </key>
+            <one-to-many class="com.bst.sscorp.entities.projects.SscorpProjectsM" />
+    </set>
+  </class>
+</hibernate-mapping>

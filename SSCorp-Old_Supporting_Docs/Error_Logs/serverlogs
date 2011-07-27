@@ -1,0 +1,1321 @@
+Mar 7, 2010 12:42:18 PM org.hibernate.util.JDBCExceptionReporter logExceptions
+WARNING: SQL Error: 0, SQLState: 08S01
+Mar 7, 2010 12:42:18 PM org.hibernate.util.JDBCExceptionReporter logExceptions
+SEVERE: Communications link failure
+
+Last packet sent to the server was 229 ms ago.
+org.hibernate.exception.JDBCConnectionException: could not execute query
+	at org.hibernate.exception.SQLStateConverter.convert(SQLStateConverter.java:74)
+	at org.hibernate.exception.JDBCExceptionHelper.convert(JDBCExceptionHelper.java:43)
+	at org.hibernate.loader.Loader.doList(Loader.java:2223)
+	at org.hibernate.loader.Loader.listIgnoreQueryCache(Loader.java:2104)
+	at org.hibernate.loader.Loader.list(Loader.java:2099)
+	at org.hibernate.loader.criteria.CriteriaLoader.list(CriteriaLoader.java:94)
+	at org.hibernate.impl.SessionImpl.list(SessionImpl.java:1569)
+	at org.hibernate.impl.CriteriaImpl.list(CriteriaImpl.java:283)
+	at org.hibernate.impl.CriteriaImpl.uniqueResult(CriteriaImpl.java:305)
+	at com.bst.sscorp.dbaccess.SSCorpDAO.fetchCompanyProfileInfo(SSCorpDAO.java:288)
+	at com.bst.sscorp.util.SSCorpUtil.fetchCompanyProfileInfo(SSCorpUtil.java:31)
+	at com.bst.sscorp.controller.SSCorpRequestProcessor.process(SSCorpRequestProcessor.java:32)
+	at org.apache.struts.action.ActionServlet.process(ActionServlet.java:1196)
+	at org.apache.struts.action.ActionServlet.doGet(ActionServlet.java:414)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:690)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:803)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:269)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:188)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:213)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:174)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:127)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:117)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:108)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:174)
+	at org.apache.coyote.http11.Http11Processor.process(Http11Processor.java:874)
+	at org.apache.coyote.http11.Http11BaseProtocol$Http11ConnectionHandler.processConnection(Http11BaseProtocol.java:665)
+	at org.apache.tomcat.util.net.PoolTcpEndpoint.processSocket(PoolTcpEndpoint.java:528)
+	at org.apache.tomcat.util.net.LeaderFollowerWorkerThread.runIt(LeaderFollowerWorkerThread.java:81)
+	at org.apache.tomcat.util.threads.ThreadPool$ControlRunnable.run(ThreadPool.java:689)
+	at java.lang.Thread.run(Thread.java:619)
+Caused by: com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+Last packet sent to the server was 229 ms ago.
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:39)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:27)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:513)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:403)
+	at com.mysql.jdbc.SQLError.createCommunicationsException(SQLError.java:1074)
+	at com.mysql.jdbc.MysqlIO.send(MysqlIO.java:3136)
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:1834)
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:1976)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2503)
+	at com.mysql.jdbc.PreparedStatement.executeInternal(PreparedStatement.java:1737)
+	at com.mysql.jdbc.PreparedStatement.executeQuery(PreparedStatement.java:1888)
+	at org.hibernate.jdbc.AbstractBatcher.getResultSet(AbstractBatcher.java:186)
+	at org.hibernate.loader.Loader.getResultSet(Loader.java:1787)
+	at org.hibernate.loader.Loader.doQuery(Loader.java:674)
+	at org.hibernate.loader.Loader.doQueryAndInitializeNonLazyCollections(Loader.java:236)
+	at org.hibernate.loader.Loader.doList(Loader.java:2220)
+	... 27 more
+Caused by: java.net.SocketException: Broken pipe
+	at java.net.SocketOutputStream.socketWrite0(Native Method)
+	at java.net.SocketOutputStream.socketWrite(SocketOutputStream.java:92)
+	at java.net.SocketOutputStream.write(SocketOutputStream.java:136)
+	at java.io.BufferedOutputStream.flushBuffer(BufferedOutputStream.java:65)
+	at java.io.BufferedOutputStream.flush(BufferedOutputStream.java:123)
+	at com.mysql.jdbc.MysqlIO.send(MysqlIO.java:3121)
+	... 37 more
+java.lang.NullPointerException
+	at com.bst.sscorp.controller.SSCorpRequestProcessor.process(SSCorpRequestProcessor.java:42)
+	at org.apache.struts.action.ActionServlet.process(ActionServlet.java:1196)
+	at org.apache.struts.action.ActionServlet.doGet(ActionServlet.java:414)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:690)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:803)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:269)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:188)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:213)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:174)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:127)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:117)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:108)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:174)
+	at org.apache.coyote.http11.Http11Processor.process(Http11Processor.java:874)
+	at org.apache.coyote.http11.Http11BaseProtocol$Http11ConnectionHandler.processConnection(Http11BaseProtocol.java:665)
+	at org.apache.tomcat.util.net.PoolTcpEndpoint.processSocket(PoolTcpEndpoint.java:528)
+	at org.apache.tomcat.util.net.LeaderFollowerWorkerThread.runIt(LeaderFollowerWorkerThread.java:81)
+	at org.apache.tomcat.util.threads.ThreadPool$ControlRunnable.run(ThreadPool.java:689)
+	at java.lang.Thread.run(Thread.java:619)
+java.lang.NullPointerException
+	at com.bst.sscorp.actionclasses.homepage.HomePageAction.execute(HomePageAction.java:38)
+	at org.apache.struts.action.RequestProcessor.processActionPerform(RequestProcessor.java:431)
+	at org.apache.struts.action.RequestProcessor.process(RequestProcessor.java:236)
+	at com.bst.sscorp.controller.SSCorpRequestProcessor.process(SSCorpRequestProcessor.java:82)
+	at org.apache.struts.action.ActionServlet.process(ActionServlet.java:1196)
+	at org.apache.struts.action.ActionServlet.doGet(ActionServlet.java:414)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:690)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:803)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:269)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:188)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:213)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:174)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:127)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:117)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:108)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:174)
+	at org.apache.coyote.http11.Http11Processor.process(Http11Processor.java:874)
+	at org.apache.coyote.http11.Http11BaseProtocol$Http11ConnectionHandler.processConnection(Http11BaseProtocol.java:665)
+	at org.apache.tomcat.util.net.PoolTcpEndpoint.processSocket(PoolTcpEndpoint.java:528)
+	at org.apache.tomcat.util.net.LeaderFollowerWorkerThread.runIt(LeaderFollowerWorkerThread.java:81)
+	at org.apache.tomcat.util.threads.ThreadPool$ControlRunnable.run(ThreadPool.java:689)
+	at java.lang.Thread.run(Thread.java:619)
+Hibernate: select this_.company_id as company1_0_0_, this_.company_name as company2_0_0_, this_.founder_name as founder3_0_0_, this_.co_founders_name as co4_0_0_, this_.present_CEO as present5_0_0_, this_.company_phone as company6_0_0_, this_.email_id as email7_0_0_, this_.company_logoAttachName as company8_0_0_, this_.company_punchLine as company9_0_0_, this_.about_us as about10_0_0_, this_.fax_number as fax11_0_0_, this_.infrastructure as infrast12_0_0_, this_.achievments_desc as achievm13_0_0_, this_.projects_desc as projects14_0_0_ from sscorp_companyProfile_m this_ where this_.company_id=? and this_.company_name=?
+Mar 7, 2010 3:13:39 PM org.hibernate.util.JDBCExceptionReporter logExceptions
+WARNING: SQL Error: 0, SQLState: 08003
+Mar 7, 2010 3:13:39 PM org.hibernate.util.JDBCExceptionReporter logExceptions
+SEVERE: No operations allowed after connection closed.Connection was implicitly closed due to underlying exception/error:
+
+
+** BEGIN NESTED EXCEPTION ** 
+
+com.mysql.jdbc.exceptions.jdbc4.CommunicationsException
+MESSAGE: Communications link failure
+
+Last packet sent to the server was 229 ms ago.
+
+STACKTRACE:
+
+com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+Last packet sent to the server was 229 ms ago.
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:39)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:27)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:513)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:403)
+	at com.mysql.jdbc.SQLError.createCommunicationsException(SQLError.java:1074)
+	at com.mysql.jdbc.MysqlIO.send(MysqlIO.java:3136)
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:1834)
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:1976)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2503)
+	at com.mysql.jdbc.PreparedStatement.executeInternal(PreparedStatement.java:1737)
+	at com.mysql.jdbc.PreparedStatement.executeQuery(PreparedStatement.java:1888)
+	at org.hibernate.jdbc.AbstractBatcher.getResultSet(AbstractBatcher.java:186)
+	at org.hibernate.loader.Loader.getResultSet(Loader.java:1787)
+	at org.hibernate.loader.Loader.doQuery(Loader.java:674)
+	at org.hibernate.loader.Loader.doQueryAndInitializeNonLazyCollections(Loader.java:236)
+	at org.hibernate.loader.Loader.doList(Loader.java:2220)
+	at org.hibernate.loader.Loader.listIgnoreQueryCache(Loader.java:2104)
+	at org.hibernate.loader.Loader.list(Loader.java:2099)
+	at org.hibernate.loader.criteria.CriteriaLoader.list(CriteriaLoader.java:94)
+	at org.hibernate.impl.SessionImpl.list(SessionImpl.java:1569)
+	at org.hibernate.impl.CriteriaImpl.list(CriteriaImpl.java:283)
+	at org.hibernate.impl.CriteriaImpl.uniqueResult(CriteriaImpl.java:305)
+	at com.bst.sscorp.dbaccess.SSCorpDAO.fetchCompanyProfileInfo(SSCorpDAO.java:288)
+	at com.bst.sscorp.util.SSCorpUtil.fetchCompanyProfileInfo(SSCorpUtil.java:31)
+	at com.bst.sscorp.controller.SSCorpRequestProcessor.process(SSCorpRequestProcessor.java:32)
+	at org.apache.struts.action.ActionServlet.process(ActionServlet.java:1196)
+	at org.apache.struts.action.ActionServlet.doGet(ActionServlet.java:414)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:690)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:803)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:269)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:188)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:213)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:174)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:127)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:117)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:108)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:174)
+	at org.apache.coyote.http11.Http11Processor.process(Http11Processor.java:874)
+	at org.apache.coyote.http11.Http11BaseProtocol$Http11ConnectionHandler.processConnection(Http11BaseProtocol.java:665)
+	at org.apache.tomcat.util.net.PoolTcpEndpoint.processSocket(PoolTcpEndpoint.java:528)
+	at org.apache.tomcat.util.net.LeaderFollowerWorkerThread.runIt(LeaderFollowerWorkerThread.java:81)
+	at org.apache.tomcat.util.threads.ThreadPool$ControlRunnable.run(ThreadPool.java:689)
+	at java.lang.Thread.run(Thread.java:619)
+Caused by: java.net.SocketException: Broken pipe
+	at java.net.SocketOutputStream.socketWrite0(Native Method)
+	at java.net.SocketOutputStream.socketWrite(SocketOutputStream.java:92)
+	at java.net.SocketOutputStream.write(SocketOutputStream.java:136)
+	at java.io.BufferedOutputStream.flushBuffer(BufferedOutputStream.java:65)
+	at java.io.BufferedOutputStream.flush(BufferedOutputStream.java:123)
+	at com.mysql.jdbc.MysqlIO.send(MysqlIO.java:3121)
+	... 37 more
+
+
+** END NESTED EXCEPTION **
+
+
+org.hibernate.exception.JDBCConnectionException: could not execute query
+	at org.hibernate.exception.SQLStateConverter.convert(SQLStateConverter.java:74)
+	at org.hibernate.exception.JDBCExceptionHelper.convert(JDBCExceptionHelper.java:43)
+	at org.hibernate.loader.Loader.doList(Loader.java:2223)
+	at org.hibernate.loader.Loader.listIgnoreQueryCache(Loader.java:2104)
+	at org.hibernate.loader.Loader.list(Loader.java:2099)
+	at org.hibernate.loader.criteria.CriteriaLoader.list(CriteriaLoader.java:94)
+	at org.hibernate.impl.SessionImpl.list(SessionImpl.java:1569)
+	at org.hibernate.impl.CriteriaImpl.list(CriteriaImpl.java:283)
+	at org.hibernate.impl.CriteriaImpl.uniqueResult(CriteriaImpl.java:305)
+	at com.bst.sscorp.dbaccess.SSCorpDAO.fetchCompanyProfileInfo(SSCorpDAO.java:288)
+	at com.bst.sscorp.util.SSCorpUtil.fetchCompanyProfileInfo(SSCorpUtil.java:31)
+	at com.bst.sscorp.controller.SSCorpRequestProcessor.process(SSCorpRequestProcessor.java:32)
+	at org.apache.struts.action.ActionServlet.process(ActionServlet.java:1196)
+	at org.apache.struts.action.ActionServlet.doGet(ActionServlet.java:414)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:690)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:803)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:269)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:188)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:213)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:174)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:127)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:117)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:108)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:174)
+	at org.apache.coyote.http11.Http11Processor.process(Http11Processor.java:874)
+	at org.apache.coyote.http11.Http11BaseProtocol$Http11ConnectionHandler.processConnection(Http11BaseProtocol.java:665)
+	at org.apache.tomcat.util.net.PoolTcpEndpoint.processSocket(PoolTcpEndpoint.java:528)
+	at org.apache.tomcat.util.net.LeaderFollowerWorkerThread.runIt(LeaderFollowerWorkerThread.java:81)
+	at org.apache.tomcat.util.threads.ThreadPool$ControlRunnable.run(ThreadPool.java:689)
+	at java.lang.Thread.run(Thread.java:619)
+Caused by: com.mysql.jdbc.exceptions.jdbc4.MySQLNonTransientConnectionException: No operations allowed after connection closed.Connection was implicitly closed due to underlying exception/error:
+
+
+** BEGIN NESTED EXCEPTION ** 
+
+com.mysql.jdbc.exceptions.jdbc4.CommunicationsException
+MESSAGE: Communications link failure
+
+Last packet sent to the server was 229 ms ago.
+
+STACKTRACE:
+
+com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+Last packet sent to the server was 229 ms ago.
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:39)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:27)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:513)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:403)
+	at com.mysql.jdbc.SQLError.createCommunicationsException(SQLError.java:1074)
+	at com.mysql.jdbc.MysqlIO.send(MysqlIO.java:3136)
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:1834)
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:1976)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2503)
+	at com.mysql.jdbc.PreparedStatement.executeInternal(PreparedStatement.java:1737)
+	at com.mysql.jdbc.PreparedStatement.executeQuery(PreparedStatement.java:1888)
+	at org.hibernate.jdbc.AbstractBatcher.getResultSet(AbstractBatcher.java:186)
+	at org.hibernate.loader.Loader.getResultSet(Loader.java:1787)
+	at org.hibernate.loader.Loader.doQuery(Loader.java:674)
+	at org.hibernate.loader.Loader.doQueryAndInitializeNonLazyCollections(Loader.java:236)
+	at org.hibernate.loader.Loader.doList(Loader.java:2220)
+	at org.hibernate.loader.Loader.listIgnoreQueryCache(Loader.java:2104)
+	at org.hibernate.loader.Loader.list(Loader.java:2099)
+	at org.hibernate.loader.criteria.CriteriaLoader.list(CriteriaLoader.java:94)
+	at org.hibernate.impl.SessionImpl.list(SessionImpl.java:1569)
+	at org.hibernate.impl.CriteriaImpl.list(CriteriaImpl.java:283)
+	at org.hibernate.impl.CriteriaImpl.uniqueResult(CriteriaImpl.java:305)
+	at com.bst.sscorp.dbaccess.SSCorpDAO.fetchCompanyProfileInfo(SSCorpDAO.java:288)
+	at com.bst.sscorp.util.SSCorpUtil.fetchCompanyProfileInfo(SSCorpUtil.java:31)
+	at com.bst.sscorp.controller.SSCorpRequestProcessor.process(SSCorpRequestProcessor.java:32)
+	at org.apache.struts.action.ActionServlet.process(ActionServlet.java:1196)
+	at org.apache.struts.action.ActionServlet.doGet(ActionServlet.java:414)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:690)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:803)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:269)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:188)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:213)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:174)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:127)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:117)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:108)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:174)
+	at org.apache.coyote.http11.Http11Processor.process(Http11Processor.java:874)
+	at org.apache.coyote.http11.Http11BaseProtocol$Http11ConnectionHandler.processConnection(Http11BaseProtocol.java:665)
+	at org.apache.tomcat.util.net.PoolTcpEndpoint.processSocket(PoolTcpEndpoint.java:528)
+	at org.apache.tomcat.util.net.LeaderFollowerWorkerThread.runIt(LeaderFollowerWorkerThread.java:81)
+	at org.apache.tomcat.util.threads.ThreadPool$ControlRunnable.run(ThreadPool.java:689)
+	at java.lang.Thread.run(Thread.java:619)
+Caused by: java.net.SocketException: Broken pipe
+	at java.net.SocketOutputStream.socketWrite0(Native Method)
+	at java.net.SocketOutputStream.socketWrite(SocketOutputStream.java:92)
+	at java.net.SocketOutputStream.write(SocketOutputStream.java:136)
+	at java.io.BufferedOutputStream.flushBuffer(BufferedOutputStream.java:65)
+	at java.io.BufferedOutputStream.flush(BufferedOutputStream.java:123)
+	at com.mysql.jdbc.MysqlIO.send(MysqlIO.java:3121)
+	... 37 more
+
+
+** END NESTED EXCEPTION **
+
+
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:39)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:27)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:513)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:403)
+	at com.mysql.jdbc.Util.getInstance(Util.java:378)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:985)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:957)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:927)
+	at com.mysql.jdbc.ConnectionImpl.checkClosed(ConnectionImpl.java:1104)
+	at com.mysql.jdbc.ConnectionImpl.prepareStatement(ConnectionImpl.java:3944)
+	at com.mysql.jdbc.ConnectionImpl.prepareStatement(ConnectionImpl.java:3910)
+	at org.hibernate.jdbc.AbstractBatcher.getPreparedStatement(AbstractBatcher.java:505)
+	at org.hibernate.jdbc.AbstractBatcher.getPreparedStatement(AbstractBatcher.java:423)
+	at org.hibernate.jdbc.AbstractBatcher.prepareQueryStatement(AbstractBatcher.java:139)
+	at org.hibernate.loader.Loader.prepareQueryStatement(Loader.java:1547)
+	at org.hibernate.loader.Loader.doQuery(Loader.java:673)
+	at org.hibernate.loader.Loader.doQueryAndInitializeNonLazyCollections(Loader.java:236)
+	at org.hibernate.loader.Loader.doList(Loader.java:2220)
+	... 27 more
+java.lang.NullPointerException
+	at com.bst.sscorp.controller.SSCorpRequestProcessor.process(SSCorpRequestProcessor.java:42)
+	at org.apache.struts.action.ActionServlet.process(ActionServlet.java:1196)
+	at org.apache.struts.action.ActionServlet.doGet(ActionServlet.java:414)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:690)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:803)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:269)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:188)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:213)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:174)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:127)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:117)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:108)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:174)
+	at org.apache.coyote.http11.Http11Processor.process(Http11Processor.java:874)
+	at org.apache.coyote.http11.Http11BaseProtocol$Http11ConnectionHandler.processConnection(Http11BaseProtocol.java:665)
+	at org.apache.tomcat.util.net.PoolTcpEndpoint.processSocket(PoolTcpEndpoint.java:528)
+	at org.apache.tomcat.util.net.LeaderFollowerWorkerThread.runIt(LeaderFollowerWorkerThread.java:81)
+	at org.apache.tomcat.util.threads.ThreadPool$ControlRunnable.run(ThreadPool.java:689)
+	at java.lang.Thread.run(Thread.java:619)
+java.lang.NullPointerException
+	at com.bst.sscorp.actionclasses.homepage.HomePageAction.execute(HomePageAction.java:38)
+	at org.apache.struts.action.RequestProcessor.processActionPerform(RequestProcessor.java:431)
+	at org.apache.struts.action.RequestProcessor.process(RequestProcessor.java:236)
+	at com.bst.sscorp.controller.SSCorpRequestProcessor.process(SSCorpRequestProcessor.java:82)
+	at org.apache.struts.action.ActionServlet.process(ActionServlet.java:1196)
+	at org.apache.struts.action.ActionServlet.doGet(ActionServlet.java:414)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:690)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:803)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:269)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:188)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:213)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:174)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:127)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:117)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:108)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:174)
+	at org.apache.coyote.http11.Http11Processor.process(Http11Processor.java:874)
+	at org.apache.coyote.http11.Http11BaseProtocol$Http11ConnectionHandler.processConnection(Http11BaseProtocol.java:665)
+	at org.apache.tomcat.util.net.PoolTcpEndpoint.processSocket(PoolTcpEndpoint.java:528)
+	at org.apache.tomcat.util.net.LeaderFollowerWorkerThread.runIt(LeaderFollowerWorkerThread.java:81)
+	at org.apache.tomcat.util.threads.ThreadPool$ControlRunnable.run(ThreadPool.java:689)
+	at java.lang.Thread.run(Thread.java:619)
+Hibernate: select this_.company_id as company1_0_0_, this_.company_name as company2_0_0_, this_.founder_name as founder3_0_0_, this_.co_founders_name as co4_0_0_, this_.present_CEO as present5_0_0_, this_.company_phone as company6_0_0_, this_.email_id as email7_0_0_, this_.company_logoAttachName as company8_0_0_, this_.company_punchLine as company9_0_0_, this_.about_us as about10_0_0_, this_.fax_number as fax11_0_0_, this_.infrastructure as infrast12_0_0_, this_.achievments_desc as achievm13_0_0_, this_.projects_desc as projects14_0_0_ from sscorp_companyProfile_m this_ where this_.company_id=? and this_.company_name=?
+Mar 7, 2010 3:13:49 PM org.hibernate.util.JDBCExceptionReporter logExceptions
+WARNING: SQL Error: 0, SQLState: 08003
+Mar 7, 2010 3:13:49 PM org.hibernate.util.JDBCExceptionReporter logExceptions
+SEVERE: No operations allowed after connection closed.Connection was implicitly closed due to underlying exception/error:
+
+
+** BEGIN NESTED EXCEPTION ** 
+
+com.mysql.jdbc.exceptions.jdbc4.CommunicationsException
+MESSAGE: Communications link failure
+
+Last packet sent to the server was 229 ms ago.
+
+STACKTRACE:
+
+com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+Last packet sent to the server was 229 ms ago.
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:39)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:27)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:513)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:403)
+	at com.mysql.jdbc.SQLError.createCommunicationsException(SQLError.java:1074)
+	at com.mysql.jdbc.MysqlIO.send(MysqlIO.java:3136)
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:1834)
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:1976)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2503)
+	at com.mysql.jdbc.PreparedStatement.executeInternal(PreparedStatement.java:1737)
+	at com.mysql.jdbc.PreparedStatement.executeQuery(PreparedStatement.java:1888)
+	at org.hibernate.jdbc.AbstractBatcher.getResultSet(AbstractBatcher.java:186)
+	at org.hibernate.loader.Loader.getResultSet(Loader.java:1787)
+	at org.hibernate.loader.Loader.doQuery(Loader.java:674)
+	at org.hibernate.loader.Loader.doQueryAndInitializeNonLazyCollections(Loader.java:236)
+	at org.hibernate.loader.Loader.doList(Loader.java:2220)
+	at org.hibernate.loader.Loader.listIgnoreQueryCache(Loader.java:2104)
+	at org.hibernate.loader.Loader.list(Loader.java:2099)
+	at org.hibernate.loader.criteria.CriteriaLoader.list(CriteriaLoader.java:94)
+	at org.hibernate.impl.SessionImpl.list(SessionImpl.java:1569)
+	at org.hibernate.impl.CriteriaImpl.list(CriteriaImpl.java:283)
+	at org.hibernate.impl.CriteriaImpl.uniqueResult(CriteriaImpl.java:305)
+	at com.bst.sscorp.dbaccess.SSCorpDAO.fetchCompanyProfileInfo(SSCorpDAO.java:288)
+	at com.bst.sscorp.util.SSCorpUtil.fetchCompanyProfileInfo(SSCorpUtil.java:31)
+	at com.bst.sscorp.controller.SSCorpRequestProcessor.process(SSCorpRequestProcessor.java:32)
+	at org.apache.struts.action.ActionServlet.process(ActionServlet.java:1196)
+	at org.apache.struts.action.ActionServlet.doGet(ActionServlet.java:414)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:690)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:803)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:269)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:188)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:213)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:174)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:127)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:117)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:108)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:174)
+	at org.apache.coyote.http11.Http11Processor.process(Http11Processor.java:874)
+	at org.apache.coyote.http11.Http11BaseProtocol$Http11ConnectionHandler.processConnection(Http11BaseProtocol.java:665)
+	at org.apache.tomcat.util.net.PoolTcpEndpoint.processSocket(PoolTcpEndpoint.java:528)
+	at org.apache.tomcat.util.net.LeaderFollowerWorkerThread.runIt(LeaderFollowerWorkerThread.java:81)
+	at org.apache.tomcat.util.threads.ThreadPool$ControlRunnable.run(ThreadPool.java:689)
+	at java.lang.Thread.run(Thread.java:619)
+Caused by: java.net.SocketException: Broken pipe
+	at java.net.SocketOutputStream.socketWrite0(Native Method)
+	at java.net.SocketOutputStream.socketWrite(SocketOutputStream.java:92)
+	at java.net.SocketOutputStream.write(SocketOutputStream.java:136)
+	at java.io.BufferedOutputStream.flushBuffer(BufferedOutputStream.java:65)
+	at java.io.BufferedOutputStream.flush(BufferedOutputStream.java:123)
+	at com.mysql.jdbc.MysqlIO.send(MysqlIO.java:3121)
+	... 37 more
+
+
+** END NESTED EXCEPTION **
+
+
+org.hibernate.exception.JDBCConnectionException: could not execute query
+	at org.hibernate.exception.SQLStateConverter.convert(SQLStateConverter.java:74)
+	at org.hibernate.exception.JDBCExceptionHelper.convert(JDBCExceptionHelper.java:43)
+	at org.hibernate.loader.Loader.doList(Loader.java:2223)
+	at org.hibernate.loader.Loader.listIgnoreQueryCache(Loader.java:2104)
+	at org.hibernate.loader.Loader.list(Loader.java:2099)
+	at org.hibernate.loader.criteria.CriteriaLoader.list(CriteriaLoader.java:94)
+	at org.hibernate.impl.SessionImpl.list(SessionImpl.java:1569)
+	at org.hibernate.impl.CriteriaImpl.list(CriteriaImpl.java:283)
+	at org.hibernate.impl.CriteriaImpl.uniqueResult(CriteriaImpl.java:305)
+	at com.bst.sscorp.dbaccess.SSCorpDAO.fetchCompanyProfileInfo(SSCorpDAO.java:288)
+	at com.bst.sscorp.util.SSCorpUtil.fetchCompanyProfileInfo(SSCorpUtil.java:31)
+	at com.bst.sscorp.controller.SSCorpRequestProcessor.process(SSCorpRequestProcessor.java:32)
+	at org.apache.struts.action.ActionServlet.process(ActionServlet.java:1196)
+	at org.apache.struts.action.ActionServlet.doGet(ActionServlet.java:414)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:690)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:803)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:269)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:188)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:213)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:174)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:127)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:117)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:108)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:174)
+	at org.apache.coyote.http11.Http11Processor.process(Http11Processor.java:874)
+	at org.apache.coyote.http11.Http11BaseProtocol$Http11ConnectionHandler.processConnection(Http11BaseProtocol.java:665)
+	at org.apache.tomcat.util.net.PoolTcpEndpoint.processSocket(PoolTcpEndpoint.java:528)
+	at org.apache.tomcat.util.net.LeaderFollowerWorkerThread.runIt(LeaderFollowerWorkerThread.java:81)
+	at org.apache.tomcat.util.threads.ThreadPool$ControlRunnable.run(ThreadPool.java:689)
+	at java.lang.Thread.run(Thread.java:619)
+Caused by: com.mysql.jdbc.exceptions.jdbc4.MySQLNonTransientConnectionException: No operations allowed after connection closed.Connection was implicitly closed due to underlying exception/error:
+
+
+** BEGIN NESTED EXCEPTION ** 
+
+com.mysql.jdbc.exceptions.jdbc4.CommunicationsException
+MESSAGE: Communications link failure
+
+Last packet sent to the server was 229 ms ago.
+
+STACKTRACE:
+
+com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+Last packet sent to the server was 229 ms ago.
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:39)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:27)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:513)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:403)
+	at com.mysql.jdbc.SQLError.createCommunicationsException(SQLError.java:1074)
+	at com.mysql.jdbc.MysqlIO.send(MysqlIO.java:3136)
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:1834)
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:1976)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2503)
+	at com.mysql.jdbc.PreparedStatement.executeInternal(PreparedStatement.java:1737)
+	at com.mysql.jdbc.PreparedStatement.executeQuery(PreparedStatement.java:1888)
+	at org.hibernate.jdbc.AbstractBatcher.getResultSet(AbstractBatcher.java:186)
+	at org.hibernate.loader.Loader.getResultSet(Loader.java:1787)
+	at org.hibernate.loader.Loader.doQuery(Loader.java:674)
+	at org.hibernate.loader.Loader.doQueryAndInitializeNonLazyCollections(Loader.java:236)
+	at org.hibernate.loader.Loader.doList(Loader.java:2220)
+	at org.hibernate.loader.Loader.listIgnoreQueryCache(Loader.java:2104)
+	at org.hibernate.loader.Loader.list(Loader.java:2099)
+	at org.hibernate.loader.criteria.CriteriaLoader.list(CriteriaLoader.java:94)
+	at org.hibernate.impl.SessionImpl.list(SessionImpl.java:1569)
+	at org.hibernate.impl.CriteriaImpl.list(CriteriaImpl.java:283)
+	at org.hibernate.impl.CriteriaImpl.uniqueResult(CriteriaImpl.java:305)
+	at com.bst.sscorp.dbaccess.SSCorpDAO.fetchCompanyProfileInfo(SSCorpDAO.java:288)
+	at com.bst.sscorp.util.SSCorpUtil.fetchCompanyProfileInfo(SSCorpUtil.java:31)
+	at com.bst.sscorp.controller.SSCorpRequestProcessor.process(SSCorpRequestProcessor.java:32)
+	at org.apache.struts.action.ActionServlet.process(ActionServlet.java:1196)
+	at org.apache.struts.action.ActionServlet.doGet(ActionServlet.java:414)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:690)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:803)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:269)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:188)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:213)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:174)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:127)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:117)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:108)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:174)
+	at org.apache.coyote.http11.Http11Processor.process(Http11Processor.java:874)
+	at org.apache.coyote.http11.Http11BaseProtocol$Http11ConnectionHandler.processConnection(Http11BaseProtocol.java:665)
+	at org.apache.tomcat.util.net.PoolTcpEndpoint.processSocket(PoolTcpEndpoint.java:528)
+	at org.apache.tomcat.util.net.LeaderFollowerWorkerThread.runIt(LeaderFollowerWorkerThread.java:81)
+	at org.apache.tomcat.util.threads.ThreadPool$ControlRunnable.run(ThreadPool.java:689)
+	at java.lang.Thread.run(Thread.java:619)
+Caused by: java.net.SocketException: Broken pipe
+	at java.net.SocketOutputStream.socketWrite0(Native Method)
+	at java.net.SocketOutputStream.socketWrite(SocketOutputStream.java:92)
+	at java.net.SocketOutputStream.write(SocketOutputStream.java:136)
+	at java.io.BufferedOutputStream.flushBuffer(BufferedOutputStream.java:65)
+	at java.io.BufferedOutputStream.flush(BufferedOutputStream.java:123)
+	at com.mysql.jdbc.MysqlIO.send(MysqlIO.java:3121)
+	... 37 more
+
+
+** END NESTED EXCEPTION **
+
+
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:39)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:27)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:513)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:403)
+	at com.mysql.jdbc.Util.getInstance(Util.java:378)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:985)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:957)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:927)
+	at com.mysql.jdbc.ConnectionImpl.checkClosed(ConnectionImpl.java:1104)
+	at com.mysql.jdbc.ConnectionImpl.prepareStatement(ConnectionImpl.java:3944)
+	at com.mysql.jdbc.ConnectionImpl.prepareStatement(ConnectionImpl.java:3910)
+	at org.hibernate.jdbc.AbstractBatcher.getPreparedStatement(AbstractBatcher.java:505)
+	at org.hibernate.jdbc.AbstractBatcher.getPreparedStatement(AbstractBatcher.java:423)
+	at org.hibernate.jdbc.AbstractBatcher.prepareQueryStatement(AbstractBatcher.java:139)
+	at org.hibernate.loader.Loader.prepareQueryStatement(Loader.java:1547)
+	at org.hibernate.loader.Loader.doQuery(Loader.java:673)
+	at org.hibernate.loader.Loader.doQueryAndInitializeNonLazyCollections(Loader.java:236)
+	at org.hibernate.loader.Loader.doList(Loader.java:2220)
+	... 27 more
+java.lang.NullPointerException
+	at com.bst.sscorp.controller.SSCorpRequestProcessor.process(SSCorpRequestProcessor.java:42)
+	at org.apache.struts.action.ActionServlet.process(ActionServlet.java:1196)
+	at org.apache.struts.action.ActionServlet.doGet(ActionServlet.java:414)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:690)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:803)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:269)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:188)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:213)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:174)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:127)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:117)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:108)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:174)
+	at org.apache.coyote.http11.Http11Processor.process(Http11Processor.java:874)
+	at org.apache.coyote.http11.Http11BaseProtocol$Http11ConnectionHandler.processConnection(Http11BaseProtocol.java:665)
+	at org.apache.tomcat.util.net.PoolTcpEndpoint.processSocket(PoolTcpEndpoint.java:528)
+	at org.apache.tomcat.util.net.LeaderFollowerWorkerThread.runIt(LeaderFollowerWorkerThread.java:81)
+	at org.apache.tomcat.util.threads.ThreadPool$ControlRunnable.run(ThreadPool.java:689)
+	at java.lang.Thread.run(Thread.java:619)
+java.lang.NullPointerException
+	at com.bst.sscorp.actionclasses.homepage.HomePageAction.execute(HomePageAction.java:38)
+	at org.apache.struts.action.RequestProcessor.processActionPerform(RequestProcessor.java:431)
+	at org.apache.struts.action.RequestProcessor.process(RequestProcessor.java:236)
+	at com.bst.sscorp.controller.SSCorpRequestProcessor.process(SSCorpRequestProcessor.java:82)
+	at org.apache.struts.action.ActionServlet.process(ActionServlet.java:1196)
+	at org.apache.struts.action.ActionServlet.doGet(ActionServlet.java:414)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:690)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:803)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:269)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:188)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:213)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:174)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:127)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:117)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:108)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:174)
+	at org.apache.coyote.http11.Http11Processor.process(Http11Processor.java:874)
+	at org.apache.coyote.http11.Http11BaseProtocol$Http11ConnectionHandler.processConnection(Http11BaseProtocol.java:665)
+	at org.apache.tomcat.util.net.PoolTcpEndpoint.processSocket(PoolTcpEndpoint.java:528)
+	at org.apache.tomcat.util.net.LeaderFollowerWorkerThread.runIt(LeaderFollowerWorkerThread.java:81)
+	at org.apache.tomcat.util.threads.ThreadPool$ControlRunnable.run(ThreadPool.java:689)
+	at java.lang.Thread.run(Thread.java:619)
+Hibernate: select this_.company_id as company1_0_0_, this_.company_name as company2_0_0_, this_.founder_name as founder3_0_0_, this_.co_founders_name as co4_0_0_, this_.present_CEO as present5_0_0_, this_.company_phone as company6_0_0_, this_.email_id as email7_0_0_, this_.company_logoAttachName as company8_0_0_, this_.company_punchLine as company9_0_0_, this_.about_us as about10_0_0_, this_.fax_number as fax11_0_0_, this_.infrastructure as infrast12_0_0_, this_.achievments_desc as achievm13_0_0_, this_.projects_desc as projects14_0_0_ from sscorp_companyProfile_m this_ where this_.company_id=? and this_.company_name=?
+Mar 7, 2010 3:14:04 PM org.hibernate.util.JDBCExceptionReporter logExceptions
+WARNING: SQL Error: 0, SQLState: 08003
+Mar 7, 2010 3:14:04 PM org.hibernate.util.JDBCExceptionReporter logExceptions
+SEVERE: No operations allowed after connection closed.Connection was implicitly closed due to underlying exception/error:
+
+
+** BEGIN NESTED EXCEPTION ** 
+
+com.mysql.jdbc.exceptions.jdbc4.CommunicationsException
+MESSAGE: Communications link failure
+
+Last packet sent to the server was 229 ms ago.
+
+STACKTRACE:
+
+com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+Last packet sent to the server was 229 ms ago.
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:39)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:27)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:513)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:403)
+	at com.mysql.jdbc.SQLError.createCommunicationsException(SQLError.java:1074)
+	at com.mysql.jdbc.MysqlIO.send(MysqlIO.java:3136)
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:1834)
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:1976)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2503)
+	at com.mysql.jdbc.PreparedStatement.executeInternal(PreparedStatement.java:1737)
+	at com.mysql.jdbc.PreparedStatement.executeQuery(PreparedStatement.java:1888)
+	at org.hibernate.jdbc.AbstractBatcher.getResultSet(AbstractBatcher.java:186)
+	at org.hibernate.loader.Loader.getResultSet(Loader.java:1787)
+	at org.hibernate.loader.Loader.doQuery(Loader.java:674)
+	at org.hibernate.loader.Loader.doQueryAndInitializeNonLazyCollections(Loader.java:236)
+	at org.hibernate.loader.Loader.doList(Loader.java:2220)
+	at org.hibernate.loader.Loader.listIgnoreQueryCache(Loader.java:2104)
+	at org.hibernate.loader.Loader.list(Loader.java:2099)
+	at org.hibernate.loader.criteria.CriteriaLoader.list(CriteriaLoader.java:94)
+	at org.hibernate.impl.SessionImpl.list(SessionImpl.java:1569)
+	at org.hibernate.impl.CriteriaImpl.list(CriteriaImpl.java:283)
+	at org.hibernate.impl.CriteriaImpl.uniqueResult(CriteriaImpl.java:305)
+	at com.bst.sscorp.dbaccess.SSCorpDAO.fetchCompanyProfileInfo(SSCorpDAO.java:288)
+	at com.bst.sscorp.util.SSCorpUtil.fetchCompanyProfileInfo(SSCorpUtil.java:31)
+	at com.bst.sscorp.controller.SSCorpRequestProcessor.process(SSCorpRequestProcessor.java:32)
+	at org.apache.struts.action.ActionServlet.process(ActionServlet.java:1196)
+	at org.apache.struts.action.ActionServlet.doGet(ActionServlet.java:414)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:690)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:803)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:269)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:188)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:213)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:174)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:127)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:117)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:108)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:174)
+	at org.apache.coyote.http11.Http11Processor.process(Http11Processor.java:874)
+	at org.apache.coyote.http11.Http11BaseProtocol$Http11ConnectionHandler.processConnection(Http11BaseProtocol.java:665)
+	at org.apache.tomcat.util.net.PoolTcpEndpoint.processSocket(PoolTcpEndpoint.java:528)
+	at org.apache.tomcat.util.net.LeaderFollowerWorkerThread.runIt(LeaderFollowerWorkerThread.java:81)
+	at org.apache.tomcat.util.threads.ThreadPool$ControlRunnable.run(ThreadPool.java:689)
+	at java.lang.Thread.run(Thread.java:619)
+Caused by: java.net.SocketException: Broken pipe
+	at java.net.SocketOutputStream.socketWrite0(Native Method)
+	at java.net.SocketOutputStream.socketWrite(SocketOutputStream.java:92)
+	at java.net.SocketOutputStream.write(SocketOutputStream.java:136)
+	at java.io.BufferedOutputStream.flushBuffer(BufferedOutputStream.java:65)
+	at java.io.BufferedOutputStream.flush(BufferedOutputStream.java:123)
+	at com.mysql.jdbc.MysqlIO.send(MysqlIO.java:3121)
+	... 37 more
+
+
+** END NESTED EXCEPTION **
+
+
+org.hibernate.exception.JDBCConnectionException: could not execute query
+	at org.hibernate.exception.SQLStateConverter.convert(SQLStateConverter.java:74)
+	at org.hibernate.exception.JDBCExceptionHelper.convert(JDBCExceptionHelper.java:43)
+	at org.hibernate.loader.Loader.doList(Loader.java:2223)
+	at org.hibernate.loader.Loader.listIgnoreQueryCache(Loader.java:2104)
+	at org.hibernate.loader.Loader.list(Loader.java:2099)
+	at org.hibernate.loader.criteria.CriteriaLoader.list(CriteriaLoader.java:94)
+	at org.hibernate.impl.SessionImpl.list(SessionImpl.java:1569)
+	at org.hibernate.impl.CriteriaImpl.list(CriteriaImpl.java:283)
+	at org.hibernate.impl.CriteriaImpl.uniqueResult(CriteriaImpl.java:305)
+	at com.bst.sscorp.dbaccess.SSCorpDAO.fetchCompanyProfileInfo(SSCorpDAO.java:288)
+	at com.bst.sscorp.util.SSCorpUtil.fetchCompanyProfileInfo(SSCorpUtil.java:31)
+	at com.bst.sscorp.controller.SSCorpRequestProcessor.process(SSCorpRequestProcessor.java:32)
+	at org.apache.struts.action.ActionServlet.process(ActionServlet.java:1196)
+	at org.apache.struts.action.ActionServlet.doGet(ActionServlet.java:414)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:690)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:803)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:269)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:188)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:213)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:174)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:127)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:117)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:108)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:174)
+	at org.apache.coyote.http11.Http11Processor.process(Http11Processor.java:874)
+	at org.apache.coyote.http11.Http11BaseProtocol$Http11ConnectionHandler.processConnection(Http11BaseProtocol.java:665)
+	at org.apache.tomcat.util.net.PoolTcpEndpoint.processSocket(PoolTcpEndpoint.java:528)
+	at org.apache.tomcat.util.net.LeaderFollowerWorkerThread.runIt(LeaderFollowerWorkerThread.java:81)
+	at org.apache.tomcat.util.threads.ThreadPool$ControlRunnable.run(ThreadPool.java:689)
+	at java.lang.Thread.run(Thread.java:619)
+Caused by: com.mysql.jdbc.exceptions.jdbc4.MySQLNonTransientConnectionException: No operations allowed after connection closed.Connection was implicitly closed due to underlying exception/error:
+
+
+** BEGIN NESTED EXCEPTION ** 
+
+com.mysql.jdbc.exceptions.jdbc4.CommunicationsException
+MESSAGE: Communications link failure
+
+Last packet sent to the server was 229 ms ago.
+
+STACKTRACE:
+
+com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+Last packet sent to the server was 229 ms ago.
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:39)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:27)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:513)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:403)
+	at com.mysql.jdbc.SQLError.createCommunicationsException(SQLError.java:1074)
+	at com.mysql.jdbc.MysqlIO.send(MysqlIO.java:3136)
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:1834)
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:1976)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2503)
+	at com.mysql.jdbc.PreparedStatement.executeInternal(PreparedStatement.java:1737)
+	at com.mysql.jdbc.PreparedStatement.executeQuery(PreparedStatement.java:1888)
+	at org.hibernate.jdbc.AbstractBatcher.getResultSet(AbstractBatcher.java:186)
+	at org.hibernate.loader.Loader.getResultSet(Loader.java:1787)
+	at org.hibernate.loader.Loader.doQuery(Loader.java:674)
+	at org.hibernate.loader.Loader.doQueryAndInitializeNonLazyCollections(Loader.java:236)
+	at org.hibernate.loader.Loader.doList(Loader.java:2220)
+	at org.hibernate.loader.Loader.listIgnoreQueryCache(Loader.java:2104)
+	at org.hibernate.loader.Loader.list(Loader.java:2099)
+	at org.hibernate.loader.criteria.CriteriaLoader.list(CriteriaLoader.java:94)
+	at org.hibernate.impl.SessionImpl.list(SessionImpl.java:1569)
+	at org.hibernate.impl.CriteriaImpl.list(CriteriaImpl.java:283)
+	at org.hibernate.impl.CriteriaImpl.uniqueResult(CriteriaImpl.java:305)
+	at com.bst.sscorp.dbaccess.SSCorpDAO.fetchCompanyProfileInfo(SSCorpDAO.java:288)
+	at com.bst.sscorp.util.SSCorpUtil.fetchCompanyProfileInfo(SSCorpUtil.java:31)
+	at com.bst.sscorp.controller.SSCorpRequestProcessor.process(SSCorpRequestProcessor.java:32)
+	at org.apache.struts.action.ActionServlet.process(ActionServlet.java:1196)
+	at org.apache.struts.action.ActionServlet.doGet(ActionServlet.java:414)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:690)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:803)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:269)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:188)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:213)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:174)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:127)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:117)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:108)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:174)
+	at org.apache.coyote.http11.Http11Processor.process(Http11Processor.java:874)
+	at org.apache.coyote.http11.Http11BaseProtocol$Http11ConnectionHandler.processConnection(Http11BaseProtocol.java:665)
+	at org.apache.tomcat.util.net.PoolTcpEndpoint.processSocket(PoolTcpEndpoint.java:528)
+	at org.apache.tomcat.util.net.LeaderFollowerWorkerThread.runIt(LeaderFollowerWorkerThread.java:81)
+	at org.apache.tomcat.util.threads.ThreadPool$ControlRunnable.run(ThreadPool.java:689)
+	at java.lang.Thread.run(Thread.java:619)
+Caused by: java.net.SocketException: Broken pipe
+	at java.net.SocketOutputStream.socketWrite0(Native Method)
+	at java.net.SocketOutputStream.socketWrite(SocketOutputStream.java:92)
+	at java.net.SocketOutputStream.write(SocketOutputStream.java:136)
+	at java.io.BufferedOutputStream.flushBuffer(BufferedOutputStream.java:65)
+	at java.io.BufferedOutputStream.flush(BufferedOutputStream.java:123)
+	at com.mysql.jdbc.MysqlIO.send(MysqlIO.java:3121)
+	... 37 more
+
+
+** END NESTED EXCEPTION **
+
+
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:39)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:27)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:513)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:403)
+	at com.mysql.jdbc.Util.getInstance(Util.java:378)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:985)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:957)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:927)
+	at com.mysql.jdbc.ConnectionImpl.checkClosed(ConnectionImpl.java:1104)
+	at com.mysql.jdbc.ConnectionImpl.prepareStatement(ConnectionImpl.java:3944)
+	at com.mysql.jdbc.ConnectionImpl.prepareStatement(ConnectionImpl.java:3910)
+	at org.hibernate.jdbc.AbstractBatcher.getPreparedStatement(AbstractBatcher.java:505)
+	at org.hibernate.jdbc.AbstractBatcher.getPreparedStatement(AbstractBatcher.java:423)
+	at org.hibernate.jdbc.AbstractBatcher.prepareQueryStatement(AbstractBatcher.java:139)
+	at org.hibernate.loader.Loader.prepareQueryStatement(Loader.java:1547)
+	at org.hibernate.loader.Loader.doQuery(Loader.java:673)
+	at org.hibernate.loader.Loader.doQueryAndInitializeNonLazyCollections(Loader.java:236)
+	at org.hibernate.loader.Loader.doList(Loader.java:2220)
+	... 27 more
+java.lang.NullPointerException
+	at com.bst.sscorp.controller.SSCorpRequestProcessor.process(SSCorpRequestProcessor.java:42)
+	at org.apache.struts.action.ActionServlet.process(ActionServlet.java:1196)
+	at org.apache.struts.action.ActionServlet.doGet(ActionServlet.java:414)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:690)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:803)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:269)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:188)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:213)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:174)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:127)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:117)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:108)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:174)
+	at org.apache.coyote.http11.Http11Processor.process(Http11Processor.java:874)
+	at org.apache.coyote.http11.Http11BaseProtocol$Http11ConnectionHandler.processConnection(Http11BaseProtocol.java:665)
+	at org.apache.tomcat.util.net.PoolTcpEndpoint.processSocket(PoolTcpEndpoint.java:528)
+	at org.apache.tomcat.util.net.LeaderFollowerWorkerThread.runIt(LeaderFollowerWorkerThread.java:81)
+	at org.apache.tomcat.util.threads.ThreadPool$ControlRunnable.run(ThreadPool.java:689)
+	at java.lang.Thread.run(Thread.java:619)
+java.lang.NullPointerException
+	at com.bst.sscorp.actionclasses.homepage.HomePageAction.execute(HomePageAction.java:38)
+	at org.apache.struts.action.RequestProcessor.processActionPerform(RequestProcessor.java:431)
+	at org.apache.struts.action.RequestProcessor.process(RequestProcessor.java:236)
+	at com.bst.sscorp.controller.SSCorpRequestProcessor.process(SSCorpRequestProcessor.java:82)
+	at org.apache.struts.action.ActionServlet.process(ActionServlet.java:1196)
+	at org.apache.struts.action.ActionServlet.doGet(ActionServlet.java:414)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:690)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:803)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:269)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:188)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:213)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:174)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:127)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:117)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:108)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:174)
+	at org.apache.coyote.http11.Http11Processor.process(Http11Processor.java:874)
+	at org.apache.coyote.http11.Http11BaseProtocol$Http11ConnectionHandler.processConnection(Http11BaseProtocol.java:665)
+	at org.apache.tomcat.util.net.PoolTcpEndpoint.processSocket(PoolTcpEndpoint.java:528)
+	at org.apache.tomcat.util.net.LeaderFollowerWorkerThread.runIt(LeaderFollowerWorkerThread.java:81)
+	at org.apache.tomcat.util.threads.ThreadPool$ControlRunnable.run(ThreadPool.java:689)
+	at java.lang.Thread.run(Thread.java:619)
+Hibernate: select this_.company_id as company1_0_0_, this_.company_name as company2_0_0_, this_.founder_name as founder3_0_0_, this_.co_founders_name as co4_0_0_, this_.present_CEO as present5_0_0_, this_.company_phone as company6_0_0_, this_.email_id as email7_0_0_, this_.company_logoAttachName as company8_0_0_, this_.company_punchLine as company9_0_0_, this_.about_us as about10_0_0_, this_.fax_number as fax11_0_0_, this_.infrastructure as infrast12_0_0_, this_.achievments_desc as achievm13_0_0_, this_.projects_desc as projects14_0_0_ from sscorp_companyProfile_m this_ where this_.company_id=? and this_.company_name=?
+Mar 7, 2010 3:25:04 PM org.hibernate.util.JDBCExceptionReporter logExceptions
+WARNING: SQL Error: 0, SQLState: 08003
+Mar 7, 2010 3:25:04 PM org.hibernate.util.JDBCExceptionReporter logExceptions
+SEVERE: No operations allowed after connection closed.Connection was implicitly closed due to underlying exception/error:
+
+
+** BEGIN NESTED EXCEPTION ** 
+
+com.mysql.jdbc.exceptions.jdbc4.CommunicationsException
+MESSAGE: Communications link failure
+
+Last packet sent to the server was 229 ms ago.
+
+STACKTRACE:
+
+com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+Last packet sent to the server was 229 ms ago.
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:39)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:27)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:513)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:403)
+	at com.mysql.jdbc.SQLError.createCommunicationsException(SQLError.java:1074)
+	at com.mysql.jdbc.MysqlIO.send(MysqlIO.java:3136)
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:1834)
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:1976)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2503)
+	at com.mysql.jdbc.PreparedStatement.executeInternal(PreparedStatement.java:1737)
+	at com.mysql.jdbc.PreparedStatement.executeQuery(PreparedStatement.java:1888)
+	at org.hibernate.jdbc.AbstractBatcher.getResultSet(AbstractBatcher.java:186)
+	at org.hibernate.loader.Loader.getResultSet(Loader.java:1787)
+	at org.hibernate.loader.Loader.doQuery(Loader.java:674)
+	at org.hibernate.loader.Loader.doQueryAndInitializeNonLazyCollections(Loader.java:236)
+	at org.hibernate.loader.Loader.doList(Loader.java:2220)
+	at org.hibernate.loader.Loader.listIgnoreQueryCache(Loader.java:2104)
+	at org.hibernate.loader.Loader.list(Loader.java:2099)
+	at org.hibernate.loader.criteria.CriteriaLoader.list(CriteriaLoader.java:94)
+	at org.hibernate.impl.SessionImpl.list(SessionImpl.java:1569)
+	at org.hibernate.impl.CriteriaImpl.list(CriteriaImpl.java:283)
+	at org.hibernate.impl.CriteriaImpl.uniqueResult(CriteriaImpl.java:305)
+	at com.bst.sscorp.dbaccess.SSCorpDAO.fetchCompanyProfileInfo(SSCorpDAO.java:288)
+	at com.bst.sscorp.util.SSCorpUtil.fetchCompanyProfileInfo(SSCorpUtil.java:31)
+	at com.bst.sscorp.controller.SSCorpRequestProcessor.process(SSCorpRequestProcessor.java:32)
+	at org.apache.struts.action.ActionServlet.process(ActionServlet.java:1196)
+	at org.apache.struts.action.ActionServlet.doGet(ActionServlet.java:414)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:690)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:803)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:269)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:188)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:213)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:174)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:127)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:117)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:108)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:174)
+	at org.apache.coyote.http11.Http11Processor.process(Http11Processor.java:874)
+	at org.apache.coyote.http11.Http11BaseProtocol$Http11ConnectionHandler.processConnection(Http11BaseProtocol.java:665)
+	at org.apache.tomcat.util.net.PoolTcpEndpoint.processSocket(PoolTcpEndpoint.java:528)
+	at org.apache.tomcat.util.net.LeaderFollowerWorkerThread.runIt(LeaderFollowerWorkerThread.java:81)
+	at org.apache.tomcat.util.threads.ThreadPool$ControlRunnable.run(ThreadPool.java:689)
+	at java.lang.Thread.run(Thread.java:619)
+Caused by: java.net.SocketException: Broken pipe
+	at java.net.SocketOutputStream.socketWrite0(Native Method)
+	at java.net.SocketOutputStream.socketWrite(SocketOutputStream.java:92)
+	at java.net.SocketOutputStream.write(SocketOutputStream.java:136)
+	at java.io.BufferedOutputStream.flushBuffer(BufferedOutputStream.java:65)
+	at java.io.BufferedOutputStream.flush(BufferedOutputStream.java:123)
+	at com.mysql.jdbc.MysqlIO.send(MysqlIO.java:3121)
+	... 37 more
+
+
+** END NESTED EXCEPTION **
+
+
+org.hibernate.exception.JDBCConnectionException: could not execute query
+	at org.hibernate.exception.SQLStateConverter.convert(SQLStateConverter.java:74)
+	at org.hibernate.exception.JDBCExceptionHelper.convert(JDBCExceptionHelper.java:43)
+	at org.hibernate.loader.Loader.doList(Loader.java:2223)
+	at org.hibernate.loader.Loader.listIgnoreQueryCache(Loader.java:2104)
+	at org.hibernate.loader.Loader.list(Loader.java:2099)
+	at org.hibernate.loader.criteria.CriteriaLoader.list(CriteriaLoader.java:94)
+	at org.hibernate.impl.SessionImpl.list(SessionImpl.java:1569)
+	at org.hibernate.impl.CriteriaImpl.list(CriteriaImpl.java:283)
+	at org.hibernate.impl.CriteriaImpl.uniqueResult(CriteriaImpl.java:305)
+	at com.bst.sscorp.dbaccess.SSCorpDAO.fetchCompanyProfileInfo(SSCorpDAO.java:288)
+	at com.bst.sscorp.util.SSCorpUtil.fetchCompanyProfileInfo(SSCorpUtil.java:31)
+	at com.bst.sscorp.controller.SSCorpRequestProcessor.process(SSCorpRequestProcessor.java:32)
+	at org.apache.struts.action.ActionServlet.process(ActionServlet.java:1196)
+	at org.apache.struts.action.ActionServlet.doGet(ActionServlet.java:414)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:690)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:803)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:269)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:188)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:213)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:174)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:127)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:117)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:108)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:174)
+	at org.apache.coyote.http11.Http11Processor.process(Http11Processor.java:874)
+	at org.apache.coyote.http11.Http11BaseProtocol$Http11ConnectionHandler.processConnection(Http11BaseProtocol.java:665)
+	at org.apache.tomcat.util.net.PoolTcpEndpoint.processSocket(PoolTcpEndpoint.java:528)
+	at org.apache.tomcat.util.net.LeaderFollowerWorkerThread.runIt(LeaderFollowerWorkerThread.java:81)
+	at org.apache.tomcat.util.threads.ThreadPool$ControlRunnable.run(ThreadPool.java:689)
+	at java.lang.Thread.run(Thread.java:619)
+Caused by: com.mysql.jdbc.exceptions.jdbc4.MySQLNonTransientConnectionException: No operations allowed after connection closed.Connection was implicitly closed due to underlying exception/error:
+
+
+** BEGIN NESTED EXCEPTION ** 
+
+com.mysql.jdbc.exceptions.jdbc4.CommunicationsException
+MESSAGE: Communications link failure
+
+Last packet sent to the server was 229 ms ago.
+
+STACKTRACE:
+
+com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+Last packet sent to the server was 229 ms ago.
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:39)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:27)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:513)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:403)
+	at com.mysql.jdbc.SQLError.createCommunicationsException(SQLError.java:1074)
+	at com.mysql.jdbc.MysqlIO.send(MysqlIO.java:3136)
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:1834)
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:1976)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2503)
+	at com.mysql.jdbc.PreparedStatement.executeInternal(PreparedStatement.java:1737)
+	at com.mysql.jdbc.PreparedStatement.executeQuery(PreparedStatement.java:1888)
+	at org.hibernate.jdbc.AbstractBatcher.getResultSet(AbstractBatcher.java:186)
+	at org.hibernate.loader.Loader.getResultSet(Loader.java:1787)
+	at org.hibernate.loader.Loader.doQuery(Loader.java:674)
+	at org.hibernate.loader.Loader.doQueryAndInitializeNonLazyCollections(Loader.java:236)
+	at org.hibernate.loader.Loader.doList(Loader.java:2220)
+	at org.hibernate.loader.Loader.listIgnoreQueryCache(Loader.java:2104)
+	at org.hibernate.loader.Loader.list(Loader.java:2099)
+	at org.hibernate.loader.criteria.CriteriaLoader.list(CriteriaLoader.java:94)
+	at org.hibernate.impl.SessionImpl.list(SessionImpl.java:1569)
+	at org.hibernate.impl.CriteriaImpl.list(CriteriaImpl.java:283)
+	at org.hibernate.impl.CriteriaImpl.uniqueResult(CriteriaImpl.java:305)
+	at com.bst.sscorp.dbaccess.SSCorpDAO.fetchCompanyProfileInfo(SSCorpDAO.java:288)
+	at com.bst.sscorp.util.SSCorpUtil.fetchCompanyProfileInfo(SSCorpUtil.java:31)
+	at com.bst.sscorp.controller.SSCorpRequestProcessor.process(SSCorpRequestProcessor.java:32)
+	at org.apache.struts.action.ActionServlet.process(ActionServlet.java:1196)
+	at org.apache.struts.action.ActionServlet.doGet(ActionServlet.java:414)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:690)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:803)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:269)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:188)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:213)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:174)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:127)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:117)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:108)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:174)
+	at org.apache.coyote.http11.Http11Processor.process(Http11Processor.java:874)
+	at org.apache.coyote.http11.Http11BaseProtocol$Http11ConnectionHandler.processConnection(Http11BaseProtocol.java:665)
+	at org.apache.tomcat.util.net.PoolTcpEndpoint.processSocket(PoolTcpEndpoint.java:528)
+	at org.apache.tomcat.util.net.LeaderFollowerWorkerThread.runIt(LeaderFollowerWorkerThread.java:81)
+	at org.apache.tomcat.util.threads.ThreadPool$ControlRunnable.run(ThreadPool.java:689)
+	at java.lang.Thread.run(Thread.java:619)
+Caused by: java.net.SocketException: Broken pipe
+	at java.net.SocketOutputStream.socketWrite0(Native Method)
+	at java.net.SocketOutputStream.socketWrite(SocketOutputStream.java:92)
+	at java.net.SocketOutputStream.write(SocketOutputStream.java:136)
+	at java.io.BufferedOutputStream.flushBuffer(BufferedOutputStream.java:65)
+	at java.io.BufferedOutputStream.flush(BufferedOutputStream.java:123)
+	at com.mysql.jdbc.MysqlIO.send(MysqlIO.java:3121)
+	... 37 more
+
+
+** END NESTED EXCEPTION **
+
+
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:39)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:27)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:513)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:403)
+	at com.mysql.jdbc.Util.getInstance(Util.java:378)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:985)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:957)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:927)
+	at com.mysql.jdbc.ConnectionImpl.checkClosed(ConnectionImpl.java:1104)
+	at com.mysql.jdbc.ConnectionImpl.prepareStatement(ConnectionImpl.java:3944)
+	at com.mysql.jdbc.ConnectionImpl.prepareStatement(ConnectionImpl.java:3910)
+	at org.hibernate.jdbc.AbstractBatcher.getPreparedStatement(AbstractBatcher.java:505)
+	at org.hibernate.jdbc.AbstractBatcher.getPreparedStatement(AbstractBatcher.java:423)
+	at org.hibernate.jdbc.AbstractBatcher.prepareQueryStatement(AbstractBatcher.java:139)
+	at org.hibernate.loader.Loader.prepareQueryStatement(Loader.java:1547)
+	at org.hibernate.loader.Loader.doQuery(Loader.java:673)
+	at org.hibernate.loader.Loader.doQueryAndInitializeNonLazyCollections(Loader.java:236)
+	at org.hibernate.loader.Loader.doList(Loader.java:2220)
+	... 27 more
+java.lang.NullPointerException
+	at com.bst.sscorp.controller.SSCorpRequestProcessor.process(SSCorpRequestProcessor.java:42)
+	at org.apache.struts.action.ActionServlet.process(ActionServlet.java:1196)
+	at org.apache.struts.action.ActionServlet.doGet(ActionServlet.java:414)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:690)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:803)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:269)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:188)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:213)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:174)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:127)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:117)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:108)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:174)
+	at org.apache.coyote.http11.Http11Processor.process(Http11Processor.java:874)
+	at org.apache.coyote.http11.Http11BaseProtocol$Http11ConnectionHandler.processConnection(Http11BaseProtocol.java:665)
+	at org.apache.tomcat.util.net.PoolTcpEndpoint.processSocket(PoolTcpEndpoint.java:528)
+	at org.apache.tomcat.util.net.LeaderFollowerWorkerThread.runIt(LeaderFollowerWorkerThread.java:81)
+	at org.apache.tomcat.util.threads.ThreadPool$ControlRunnable.run(ThreadPool.java:689)
+	at java.lang.Thread.run(Thread.java:619)
+java.lang.NullPointerException
+	at com.bst.sscorp.actionclasses.homepage.HomePageAction.execute(HomePageAction.java:38)
+	at org.apache.struts.action.RequestProcessor.processActionPerform(RequestProcessor.java:431)
+	at org.apache.struts.action.RequestProcessor.process(RequestProcessor.java:236)
+	at com.bst.sscorp.controller.SSCorpRequestProcessor.process(SSCorpRequestProcessor.java:82)
+	at org.apache.struts.action.ActionServlet.process(ActionServlet.java:1196)
+	at org.apache.struts.action.ActionServlet.doGet(ActionServlet.java:414)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:690)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:803)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:269)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:188)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:213)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:174)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:127)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:117)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:108)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:174)
+	at org.apache.coyote.http11.Http11Processor.process(Http11Processor.java:874)
+	at org.apache.coyote.http11.Http11BaseProtocol$Http11ConnectionHandler.processConnection(Http11BaseProtocol.java:665)
+	at org.apache.tomcat.util.net.PoolTcpEndpoint.processSocket(PoolTcpEndpoint.java:528)
+	at org.apache.tomcat.util.net.LeaderFollowerWorkerThread.runIt(LeaderFollowerWorkerThread.java:81)
+	at org.apache.tomcat.util.threads.ThreadPool$ControlRunnable.run(ThreadPool.java:689)
+	at java.lang.Thread.run(Thread.java:619)
+------------------------>>>>/home.do
+Hibernate: select this_.company_id as company1_0_0_, this_.company_name as company2_0_0_, this_.founder_name as founder3_0_0_, this_.co_founders_name as co4_0_0_, this_.present_CEO as present5_0_0_, this_.company_phone as company6_0_0_, this_.email_id as email7_0_0_, this_.company_logoAttachName as company8_0_0_, this_.company_punchLine as company9_0_0_, this_.about_us as about10_0_0_, this_.fax_number as fax11_0_0_, this_.infrastructure as infrast12_0_0_, this_.achievments_desc as achievm13_0_0_, this_.projects_desc as projects14_0_0_ from sscorp_companyProfile_m this_ where this_.company_id=? and this_.company_name=?
+Mar 7, 2010 4:26:50 PM org.hibernate.util.JDBCExceptionReporter logExceptions
+WARNING: SQL Error: 0, SQLState: 08003
+Mar 7, 2010 4:26:50 PM org.hibernate.util.JDBCExceptionReporter logExceptions
+SEVERE: No operations allowed after connection closed.Connection was implicitly closed due to underlying exception/error:
+
+
+** BEGIN NESTED EXCEPTION ** 
+
+com.mysql.jdbc.exceptions.jdbc4.CommunicationsException
+MESSAGE: Communications link failure
+
+Last packet sent to the server was 229 ms ago.
+
+STACKTRACE:
+
+com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+Last packet sent to the server was 229 ms ago.
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:39)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:27)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:513)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:403)
+	at com.mysql.jdbc.SQLError.createCommunicationsException(SQLError.java:1074)
+	at com.mysql.jdbc.MysqlIO.send(MysqlIO.java:3136)
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:1834)
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:1976)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2503)
+	at com.mysql.jdbc.PreparedStatement.executeInternal(PreparedStatement.java:1737)
+	at com.mysql.jdbc.PreparedStatement.executeQuery(PreparedStatement.java:1888)
+	at org.hibernate.jdbc.AbstractBatcher.getResultSet(AbstractBatcher.java:186)
+	at org.hibernate.loader.Loader.getResultSet(Loader.java:1787)
+	at org.hibernate.loader.Loader.doQuery(Loader.java:674)
+	at org.hibernate.loader.Loader.doQueryAndInitializeNonLazyCollections(Loader.java:236)
+	at org.hibernate.loader.Loader.doList(Loader.java:2220)
+	at org.hibernate.loader.Loader.listIgnoreQueryCache(Loader.java:2104)
+	at org.hibernate.loader.Loader.list(Loader.java:2099)
+	at org.hibernate.loader.criteria.CriteriaLoader.list(CriteriaLoader.java:94)
+	at org.hibernate.impl.SessionImpl.list(SessionImpl.java:1569)
+	at org.hibernate.impl.CriteriaImpl.list(CriteriaImpl.java:283)
+	at org.hibernate.impl.CriteriaImpl.uniqueResult(CriteriaImpl.java:305)
+	at com.bst.sscorp.dbaccess.SSCorpDAO.fetchCompanyProfileInfo(SSCorpDAO.java:288)
+	at com.bst.sscorp.util.SSCorpUtil.fetchCompanyProfileInfo(SSCorpUtil.java:31)
+	at com.bst.sscorp.controller.SSCorpRequestProcessor.process(SSCorpRequestProcessor.java:32)
+	at org.apache.struts.action.ActionServlet.process(ActionServlet.java:1196)
+	at org.apache.struts.action.ActionServlet.doGet(ActionServlet.java:414)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:690)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:803)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:269)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:188)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:213)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:174)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:127)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:117)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:108)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:174)
+	at org.apache.coyote.http11.Http11Processor.process(Http11Processor.java:874)
+	at org.apache.coyote.http11.Http11BaseProtocol$Http11ConnectionHandler.processConnection(Http11BaseProtocol.java:665)
+	at org.apache.tomcat.util.net.PoolTcpEndpoint.processSocket(PoolTcpEndpoint.java:528)
+	at org.apache.tomcat.util.net.LeaderFollowerWorkerThread.runIt(LeaderFollowerWorkerThread.java:81)
+	at org.apache.tomcat.util.threads.ThreadPool$ControlRunnable.run(ThreadPool.java:689)
+	at java.lang.Thread.run(Thread.java:619)
+Caused by: java.net.SocketException: Broken pipe
+	at java.net.SocketOutputStream.socketWrite0(Native Method)
+	at java.net.SocketOutputStream.socketWrite(SocketOutputStream.java:92)
+	at java.net.SocketOutputStream.write(SocketOutputStream.java:136)
+	at java.io.BufferedOutputStream.flushBuffer(BufferedOutputStream.java:65)
+	at java.io.BufferedOutputStream.flush(BufferedOutputStream.java:123)
+	at com.mysql.jdbc.MysqlIO.send(MysqlIO.java:3121)
+	... 37 more
+
+
+** END NESTED EXCEPTION **
+
+
+org.hibernate.exception.JDBCConnectionException: could not execute query
+	at org.hibernate.exception.SQLStateConverter.convert(SQLStateConverter.java:74)
+	at org.hibernate.exception.JDBCExceptionHelper.convert(JDBCExceptionHelper.java:43)
+	at org.hibernate.loader.Loader.doList(Loader.java:2223)
+	at org.hibernate.loader.Loader.listIgnoreQueryCache(Loader.java:2104)
+	at org.hibernate.loader.Loader.list(Loader.java:2099)
+	at org.hibernate.loader.criteria.CriteriaLoader.list(CriteriaLoader.java:94)
+	at org.hibernate.impl.SessionImpl.list(SessionImpl.java:1569)
+	at org.hibernate.impl.CriteriaImpl.list(CriteriaImpl.java:283)
+	at org.hibernate.impl.CriteriaImpl.uniqueResult(CriteriaImpl.java:305)
+	at com.bst.sscorp.dbaccess.SSCorpDAO.fetchCompanyProfileInfo(SSCorpDAO.java:288)
+	at com.bst.sscorp.util.SSCorpUtil.fetchCompanyProfileInfo(SSCorpUtil.java:31)
+	at com.bst.sscorp.controller.SSCorpRequestProcessor.process(SSCorpRequestProcessor.java:32)
+	at org.apache.struts.action.ActionServlet.process(ActionServlet.java:1196)
+	at org.apache.struts.action.ActionServlet.doGet(ActionServlet.java:414)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:690)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:803)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:269)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:188)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:213)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:174)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:127)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:117)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:108)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:174)
+	at org.apache.coyote.http11.Http11Processor.process(Http11Processor.java:874)
+	at org.apache.coyote.http11.Http11BaseProtocol$Http11ConnectionHandler.processConnection(Http11BaseProtocol.java:665)
+	at org.apache.tomcat.util.net.PoolTcpEndpoint.processSocket(PoolTcpEndpoint.java:528)
+	at org.apache.tomcat.util.net.LeaderFollowerWorkerThread.runIt(LeaderFollowerWorkerThread.java:81)
+	at org.apache.tomcat.util.threads.ThreadPool$ControlRunnable.run(ThreadPool.java:689)
+	at java.lang.Thread.run(Thread.java:619)
+Caused by: com.mysql.jdbc.exceptions.jdbc4.MySQLNonTransientConnectionException: No operations allowed after connection closed.Connection was implicitly closed due to underlying exception/error:
+
+
+** BEGIN NESTED EXCEPTION ** 
+
+com.mysql.jdbc.exceptions.jdbc4.CommunicationsException
+MESSAGE: Communications link failure
+
+Last packet sent to the server was 229 ms ago.
+
+STACKTRACE:
+
+com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+Last packet sent to the server was 229 ms ago.
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:39)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:27)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:513)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:403)
+	at com.mysql.jdbc.SQLError.createCommunicationsException(SQLError.java:1074)
+	at com.mysql.jdbc.MysqlIO.send(MysqlIO.java:3136)
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:1834)
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:1976)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2503)
+	at com.mysql.jdbc.PreparedStatement.executeInternal(PreparedStatement.java:1737)
+	at com.mysql.jdbc.PreparedStatement.executeQuery(PreparedStatement.java:1888)
+	at org.hibernate.jdbc.AbstractBatcher.getResultSet(AbstractBatcher.java:186)
+	at org.hibernate.loader.Loader.getResultSet(Loader.java:1787)
+	at org.hibernate.loader.Loader.doQuery(Loader.java:674)
+	at org.hibernate.loader.Loader.doQueryAndInitializeNonLazyCollections(Loader.java:236)
+	at org.hibernate.loader.Loader.doList(Loader.java:2220)
+	at org.hibernate.loader.Loader.listIgnoreQueryCache(Loader.java:2104)
+	at org.hibernate.loader.Loader.list(Loader.java:2099)
+	at org.hibernate.loader.criteria.CriteriaLoader.list(CriteriaLoader.java:94)
+	at org.hibernate.impl.SessionImpl.list(SessionImpl.java:1569)
+	at org.hibernate.impl.CriteriaImpl.list(CriteriaImpl.java:283)
+	at org.hibernate.impl.CriteriaImpl.uniqueResult(CriteriaImpl.java:305)
+	at com.bst.sscorp.dbaccess.SSCorpDAO.fetchCompanyProfileInfo(SSCorpDAO.java:288)
+	at com.bst.sscorp.util.SSCorpUtil.fetchCompanyProfileInfo(SSCorpUtil.java:31)
+	at com.bst.sscorp.controller.SSCorpRequestProcessor.process(SSCorpRequestProcessor.java:32)
+	at org.apache.struts.action.ActionServlet.process(ActionServlet.java:1196)
+	at org.apache.struts.action.ActionServlet.doGet(ActionServlet.java:414)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:690)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:803)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:269)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:188)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:213)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:174)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:127)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:117)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:108)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:174)
+	at org.apache.coyote.http11.Http11Processor.process(Http11Processor.java:874)
+	at org.apache.coyote.http11.Http11BaseProtocol$Http11ConnectionHandler.processConnection(Http11BaseProtocol.java:665)
+	at org.apache.tomcat.util.net.PoolTcpEndpoint.processSocket(PoolTcpEndpoint.java:528)
+	at org.apache.tomcat.util.net.LeaderFollowerWorkerThread.runIt(LeaderFollowerWorkerThread.java:81)
+	at org.apache.tomcat.util.threads.ThreadPool$ControlRunnable.run(ThreadPool.java:689)
+	at java.lang.Thread.run(Thread.java:619)
+Caused by: java.net.SocketException: Broken pipe
+	at java.net.SocketOutputStream.socketWrite0(Native Method)
+	at java.net.SocketOutputStream.socketWrite(SocketOutputStream.java:92)
+	at java.net.SocketOutputStream.write(SocketOutputStream.java:136)
+	at java.io.BufferedOutputStream.flushBuffer(BufferedOutputStream.java:65)
+	at java.io.BufferedOutputStream.flush(BufferedOutputStream.java:123)
+	at com.mysql.jdbc.MysqlIO.send(MysqlIO.java:3121)
+	... 37 more
+
+
+** END NESTED EXCEPTION **
+
+
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:39)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:27)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:513)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:403)
+	at com.mysql.jdbc.Util.getInstance(Util.java:378)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:985)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:957)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:927)
+	at com.mysql.jdbc.ConnectionImpl.checkClosed(ConnectionImpl.java:1104)
+	at com.mysql.jdbc.ConnectionImpl.prepareStatement(ConnectionImpl.java:3944)
+	at com.mysql.jdbc.ConnectionImpl.prepareStatement(ConnectionImpl.java:3910)
+	at org.hibernate.jdbc.AbstractBatcher.getPreparedStatement(AbstractBatcher.java:505)
+	at org.hibernate.jdbc.AbstractBatcher.getPreparedStatement(AbstractBatcher.java:423)
+	at org.hibernate.jdbc.AbstractBatcher.prepareQueryStatement(AbstractBatcher.java:139)
+	at org.hibernate.loader.Loader.prepareQueryStatement(Loader.java:1547)
+	at org.hibernate.loader.Loader.doQuery(Loader.java:673)
+	at org.hibernate.loader.Loader.doQueryAndInitializeNonLazyCollections(Loader.java:236)
+	at org.hibernate.loader.Loader.doList(Loader.java:2220)
+	... 27 more
+java.lang.NullPointerException
+	at com.bst.sscorp.controller.SSCorpRequestProcessor.process(SSCorpRequestProcessor.java:42)
+	at org.apache.struts.action.ActionServlet.process(ActionServlet.java:1196)
+	at org.apache.struts.action.ActionServlet.doGet(ActionServlet.java:414)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:690)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:803)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:269)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:188)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:213)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:174)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:127)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:117)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:108)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:174)
+	at org.apache.coyote.http11.Http11Processor.process(Http11Processor.java:874)
+	at org.apache.coyote.http11.Http11BaseProtocol$Http11ConnectionHandler.processConnection(Http11BaseProtocol.java:665)
+	at org.apache.tomcat.util.net.PoolTcpEndpoint.processSocket(PoolTcpEndpoint.java:528)
+	at org.apache.tomcat.util.net.LeaderFollowerWorkerThread.runIt(LeaderFollowerWorkerThread.java:81)
+	at org.apache.tomcat.util.threads.ThreadPool$ControlRunnable.run(ThreadPool.java:689)
+	at java.lang.Thread.run(Thread.java:619)
+java.lang.NullPointerException
+	at com.bst.sscorp.actionclasses.homepage.HomePageAction.execute(HomePageAction.java:38)
+	at org.apache.struts.action.RequestProcessor.processActionPerform(RequestProcessor.java:431)
+	at org.apache.struts.action.RequestProcessor.process(RequestProcessor.java:236)
+	at com.bst.sscorp.controller.SSCorpRequestProcessor.process(SSCorpRequestProcessor.java:82)
+	at org.apache.struts.action.ActionServlet.process(ActionServlet.java:1196)
+	at org.apache.struts.action.ActionServlet.doGet(ActionServlet.java:414)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:690)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:803)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:269)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:188)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:213)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:174)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:127)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:117)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:108)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:174)
+	at org.apache.coyote.http11.Http11Processor.process(Http11Processor.java:874)
+	at org.apache.coyote.http11.Http11BaseProtocol$Http11ConnectionHandler.processConnection(Http11BaseProtocol.java:665)
+	at org.apache.tomcat.util.net.PoolTcpEndpoint.processSocket(PoolTcpEndpoint.java:528)
+	at org.apache.tomcat.util.net.LeaderFollowerWorkerThread.runIt(LeaderFollowerWorkerThread.java:81)
+	at org.apache.tomcat.util.threads.ThreadPool$ControlRunnable.run(ThreadPool.java:689)
+	at java.lang.Thread.run(Thread.java:619)
+

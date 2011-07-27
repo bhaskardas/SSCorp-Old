@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 6 Dec, 2009 5:30:45 PM by Hibernate Tools 3.2.1.GA -->
+<hibernate-mapping>
+  <class name="com.bst.sscorp.entities.customerdetails.SscorpCustomerDetailsT" table="sscorp_customerDetails_t">
+    <id name="customerId" type="java.lang.Integer">
+      <column name="customer_id"/>
+      <generator class="increment"/>
+    </id>
+    <property name="firstName" type="string">
+      <column length="50" name="first_name" not-null="true"/>
+    </property>
+    <property name="lastName" type="string">
+      <column length="50" name="last_name"/>
+    </property>
+    <property name="gender" type="string">
+      <column length="5" name="gender" not-null="true"/>
+    </property>
+    <property name="emailId" type="string">
+      <column length="100" name="email_id" not-null="true"/>
+    </property>
+    <property name="companyName" type="string">
+      <column length="50" name="company_name"/>
+    </property>
+    <property name="companyWebsite" type="string">
+      <column length="50" name="company_website"/>
+    </property>
+    <property name="phoneNo" type="string">
+      <column length="20" name="phone_no"/>
+    </property>
+    <property name="mobileNo" type="string">
+      <column length="20" name="mobile_no"/>
+    </property>
+    <set inverse="true" name="sscorpQueryDetailsTs">
+      <key>
+        <column name="customer_id"/>
+      </key>
+      <one-to-many class="com.bst.sscorp.entities.querydetails.SscorpQueryDetailsT"/>
+    </set>
+  </class>
+</hibernate-mapping>

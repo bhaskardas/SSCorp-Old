@@ -1,0 +1,1324 @@
+Mar 9, 2010 11:42:26 PM org.apache.catalina.core.AprLifecycleListener lifecycleEvent
+INFO: The Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: /usr/local/jdk1.6.0_17/jdk1.6.0_10/jre/lib/i386/server:/usr/local/jdk1.6.0_17/jdk1.6.0_10/jre/lib/i386:/usr/local/jdk1.6.0_17/jdk1.6.0_10/jre/../lib/i386:/usr/java/packages/lib/i386:/lib:/usr/lib
+Mar 9, 2010 11:42:27 PM org.apache.coyote.http11.Http11BaseProtocol init
+INFO: Initializing Coyote HTTP/1.1 on http-127.0.0.1-4794
+Mar 9, 2010 11:42:27 PM org.apache.catalina.startup.Catalina load
+INFO: Initialization processed in 764 ms
+Mar 9, 2010 11:42:27 PM org.apache.catalina.core.StandardService start
+INFO: Starting service Catalina
+Mar 9, 2010 11:42:27 PM org.apache.catalina.core.StandardEngine start
+INFO: Starting Servlet Engine: Apache Tomcat/5.5.26
+Mar 9, 2010 11:42:27 PM org.apache.catalina.core.StandardHost start
+INFO: XML validation disabled
+Mar 9, 2010 11:42:28 PM org.apache.struts.tiles.TilesPlugin initDefinitionsFactory
+INFO: Tiles definition factory loaded for module ''.
+Mar 9, 2010 11:42:28 PM org.apache.struts.validator.ValidatorPlugIn initResources
+INFO: Loading validation rules file from '/WEB-INF/conf/validator-rules.xml'
+Mar 9, 2010 11:42:28 PM org.apache.struts.validator.ValidatorPlugIn initResources
+INFO: Loading validation rules file from '/WEB-INF/conf/validation.xml'
+Mar 9, 2010 11:42:29 PM org.apache.coyote.http11.Http11BaseProtocol start
+INFO: Starting Coyote HTTP/1.1 on http-127.0.0.1-4794
+Mar 9, 2010 11:42:29 PM org.apache.jk.common.ChannelSocket init
+INFO: JK: ajp13 listening on /0.0.0.0:4792
+Mar 9, 2010 11:42:29 PM org.apache.jk.server.JkMain start
+INFO: Jk running ID=0 time=0/22  config=null
+Mar 9, 2010 11:42:29 PM org.apache.catalina.storeconfig.StoreLoader load
+INFO: Find registry server-registry.xml at classpath resource
+Mar 9, 2010 11:42:29 PM org.apache.catalina.startup.Catalina start
+INFO: Server startup in 2295 ms
+Mar 9, 2010 11:42:53 PM org.apache.struts.tiles.TilesRequestProcessor initDefinitionsMapping
+INFO: Tiles definition factory found for request processor ''.
+Mar 9, 2010 11:42:53 PM org.hibernate.cfg.annotations.Version 
+INFO: Hibernate Annotations 3.3.1.GA
+Mar 9, 2010 11:42:53 PM org.hibernate.cfg.Environment 
+INFO: Hibernate 3.2.5
+Mar 9, 2010 11:42:53 PM org.hibernate.cfg.Environment 
+INFO: hibernate.properties not found
+Mar 9, 2010 11:42:53 PM org.hibernate.cfg.Environment buildBytecodeProvider
+INFO: Bytecode provider name : cglib
+Mar 9, 2010 11:42:53 PM org.hibernate.cfg.Environment 
+INFO: using JDK 1.4 java.sql.Timestamp handling
+Mar 9, 2010 11:42:53 PM org.hibernate.cfg.Configuration configure
+INFO: configuring from resource: /hibernate.cfg.xml
+Mar 9, 2010 11:42:53 PM org.hibernate.cfg.Configuration getConfigurationInputStream
+INFO: Configuration resource: /hibernate.cfg.xml
+Mar 9, 2010 11:42:53 PM org.hibernate.cfg.Configuration addResource
+INFO: Reading mappings from resource : com/bst/sscorp/entities/companyprofile/SscorpCompanyProfileM.hbm.xml
+Mar 9, 2010 11:42:53 PM org.hibernate.cfg.Configuration addResource
+INFO: Reading mappings from resource : com/bst/sscorp/entities/menu/SscorpMenuM.hbm.xml
+Mar 9, 2010 11:42:53 PM org.hibernate.cfg.Configuration addResource
+INFO: Reading mappings from resource : com/bst/sscorp/entities/querydetails/SscorpQueryDetailsT.hbm.xml
+Mar 9, 2010 11:42:53 PM org.hibernate.cfg.Configuration addResource
+INFO: Reading mappings from resource : com/bst/sscorp/entities/customerdetails/SscorpCustomerDetailsT.hbm.xml
+Mar 9, 2010 11:42:53 PM org.hibernate.cfg.Configuration addResource
+INFO: Reading mappings from resource : com/bst/sscorp/entities/products/SscorpProductsM.hbm.xml
+Mar 9, 2010 11:42:53 PM org.hibernate.cfg.Configuration addResource
+INFO: Reading mappings from resource : com/bst/sscorp/entities/achievments/SscorpAchievmentsM.hbm.xml
+Mar 9, 2010 11:42:53 PM org.hibernate.cfg.Configuration addResource
+INFO: Reading mappings from resource : com/bst/sscorp/entities/address/SscorpAddressM.hbm.xml
+Mar 9, 2010 11:42:53 PM org.hibernate.cfg.Configuration addResource
+INFO: Reading mappings from resource : com/bst/sscorp/entities/mobilenumbers/SscorpPhoneNumbersM.hbm.xml
+Mar 9, 2010 11:42:53 PM org.hibernate.cfg.Configuration addResource
+INFO: Reading mappings from resource : com/bst/sscorp/entities/projects/SscorpProjectsM.hbm.xml
+Mar 9, 2010 11:42:53 PM org.hibernate.cfg.Configuration addResource
+INFO: Reading mappings from resource : com/bst/sscorp/entities/projects/SscorpProjectCategoryM.hbm.xml
+Mar 9, 2010 11:42:54 PM org.hibernate.cfg.Configuration doConfigure
+INFO: Configured SessionFactory: null
+Mar 9, 2010 11:42:54 PM org.hibernate.cfg.HbmBinder bindRootPersistentClassCommonValues
+INFO: Mapping class: com.bst.sscorp.entities.companyprofile.SscorpCompanyProfileM -> sscorp_companyProfile_m
+Mar 9, 2010 11:42:54 PM org.hibernate.cfg.HbmBinder bindRootPersistentClassCommonValues
+INFO: Mapping class: com.bst.sscorp.entities.menu.SscorpMenuM -> sscorp_menu_m
+Mar 9, 2010 11:42:54 PM org.hibernate.cfg.HbmBinder bindRootPersistentClassCommonValues
+INFO: Mapping class: com.bst.sscorp.entities.querydetails.SscorpQueryDetailsT -> sscorp_queryDetails_t
+Mar 9, 2010 11:42:54 PM org.hibernate.cfg.HbmBinder bindRootPersistentClassCommonValues
+INFO: Mapping class: com.bst.sscorp.entities.customerdetails.SscorpCustomerDetailsT -> sscorp_customerDetails_t
+Mar 9, 2010 11:42:54 PM org.hibernate.cfg.HbmBinder bindRootPersistentClassCommonValues
+INFO: Mapping class: com.bst.sscorp.entities.products.SscorpProductsM -> sscorp_products_m
+Mar 9, 2010 11:42:54 PM org.hibernate.cfg.HbmBinder bindRootPersistentClassCommonValues
+INFO: Mapping class: com.bst.sscorp.entities.achievments.SscorpAchievmentsM -> sscorp_achievments_m
+Mar 9, 2010 11:42:54 PM org.hibernate.cfg.HbmBinder bindRootPersistentClassCommonValues
+INFO: Mapping class: com.bst.sscorp.entities.address.SscorpAddressM -> sscorp_address_m
+Mar 9, 2010 11:42:54 PM org.hibernate.cfg.HbmBinder bindRootPersistentClassCommonValues
+INFO: Mapping class: com.bst.sscorp.entities.mobilenumbers.SscorpPhoneNumbersM -> sscorp_phone_numbers_m
+Mar 9, 2010 11:42:54 PM org.hibernate.cfg.HbmBinder bindRootPersistentClassCommonValues
+INFO: Mapping class: com.bst.sscorp.entities.projects.SscorpProjectsM -> sscorp_projects_m
+Mar 9, 2010 11:42:54 PM org.hibernate.cfg.HbmBinder bindRootPersistentClassCommonValues
+INFO: Mapping class: com.bst.sscorp.entities.projects.SscorpProjectCategoryM -> sscorp_project_category_m
+Mar 9, 2010 11:42:54 PM org.hibernate.cfg.HbmBinder bindCollectionSecondPass
+INFO: Mapping collection: com.bst.sscorp.entities.companyprofile.SscorpCompanyProfileM.sscorpAddressMs -> sscorp_address_m
+Mar 9, 2010 11:42:54 PM org.hibernate.cfg.HbmBinder bindCollectionSecondPass
+INFO: Mapping collection: com.bst.sscorp.entities.companyprofile.SscorpCompanyProfileM.sscorpAchievmentsMs -> sscorp_achievments_m
+Mar 9, 2010 11:42:54 PM org.hibernate.cfg.HbmBinder bindCollectionSecondPass
+INFO: Mapping collection: com.bst.sscorp.entities.companyprofile.SscorpCompanyProfileM.sscorpPhoneNumbersMs -> sscorp_phone_numbers_m
+Mar 9, 2010 11:42:54 PM org.hibernate.cfg.HbmBinder bindCollectionSecondPass
+INFO: Mapping collection: com.bst.sscorp.entities.companyprofile.SscorpCompanyProfileM.sscorpProjectCategoryMs -> sscorp_project_category_m
+Mar 9, 2010 11:42:54 PM org.hibernate.cfg.HbmBinder bindCollectionSecondPass
+INFO: Mapping collection: com.bst.sscorp.entities.customerdetails.SscorpCustomerDetailsT.sscorpQueryDetailsTs -> sscorp_queryDetails_t
+Mar 9, 2010 11:42:54 PM org.hibernate.cfg.HbmBinder bindCollectionSecondPass
+INFO: Mapping collection: com.bst.sscorp.entities.projects.SscorpProjectCategoryM.sscorpProjectsMs -> sscorp_projects_m
+Mar 9, 2010 11:42:54 PM org.hibernate.cfg.AnnotationConfiguration secondPassCompile
+INFO: Hibernate Validator not found: ignoring
+Mar 9, 2010 11:42:54 PM org.hibernate.connection.DriverManagerConnectionProvider configure
+INFO: Using Hibernate built-in connection pool (not for production use!)
+Mar 9, 2010 11:42:54 PM org.hibernate.connection.DriverManagerConnectionProvider configure
+INFO: Hibernate connection pool size: 20
+Mar 9, 2010 11:42:54 PM org.hibernate.connection.DriverManagerConnectionProvider configure
+INFO: autocommit mode: false
+Mar 9, 2010 11:42:54 PM org.hibernate.connection.DriverManagerConnectionProvider configure
+INFO: using driver: com.mysql.jdbc.Driver at URL: jdbc:mysql://localhost:3306/supercon_sscorp
+Mar 9, 2010 11:42:54 PM org.hibernate.connection.DriverManagerConnectionProvider configure
+INFO: connection properties: {user=supercon_admin, password=****}
+Mar 9, 2010 11:42:54 PM org.hibernate.cfg.SettingsFactory buildSettings
+INFO: RDBMS: MySQL, version: 5.0.89-community
+Mar 9, 2010 11:42:54 PM org.hibernate.cfg.SettingsFactory buildSettings
+INFO: JDBC driver: MySQL-AB JDBC Driver, version: mysql-connector-java-5.1.3-rc ( Revision: ${svn.Revision} )
+Mar 9, 2010 11:42:54 PM org.hibernate.dialect.Dialect 
+INFO: Using dialect: org.hibernate.dialect.MySQLDialect
+Mar 9, 2010 11:42:54 PM org.hibernate.transaction.TransactionFactoryFactory buildTransactionFactory
+INFO: Using default transaction strategy (direct JDBC transactions)
+Mar 9, 2010 11:42:54 PM org.hibernate.transaction.TransactionManagerLookupFactory getTransactionManagerLookup
+INFO: No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)
+Mar 9, 2010 11:42:54 PM org.hibernate.cfg.SettingsFactory buildSettings
+INFO: Automatic flush during beforeCompletion(): disabled
+Mar 9, 2010 11:42:54 PM org.hibernate.cfg.SettingsFactory buildSettings
+INFO: Automatic session close at end of transaction: disabled
+Mar 9, 2010 11:42:54 PM org.hibernate.cfg.SettingsFactory buildSettings
+INFO: JDBC batch size: 15
+Mar 9, 2010 11:42:54 PM org.hibernate.cfg.SettingsFactory buildSettings
+INFO: JDBC batch updates for versioned data: disabled
+Mar 9, 2010 11:42:54 PM org.hibernate.cfg.SettingsFactory buildSettings
+INFO: Scrollable result sets: enabled
+Mar 9, 2010 11:42:54 PM org.hibernate.cfg.SettingsFactory buildSettings
+INFO: JDBC3 getGeneratedKeys(): enabled
+Mar 9, 2010 11:42:54 PM org.hibernate.cfg.SettingsFactory buildSettings
+INFO: Connection release mode: auto
+Mar 9, 2010 11:42:54 PM org.hibernate.cfg.SettingsFactory buildSettings
+INFO: Maximum outer join fetch depth: 2
+Mar 9, 2010 11:42:54 PM org.hibernate.cfg.SettingsFactory buildSettings
+INFO: Default batch fetch size: 1
+Mar 9, 2010 11:42:54 PM org.hibernate.cfg.SettingsFactory buildSettings
+INFO: Generate SQL with comments: disabled
+Mar 9, 2010 11:42:54 PM org.hibernate.cfg.SettingsFactory buildSettings
+INFO: Order SQL updates by primary key: disabled
+Mar 9, 2010 11:42:54 PM org.hibernate.cfg.SettingsFactory buildSettings
+INFO: Order SQL inserts for batching: disabled
+Mar 9, 2010 11:42:54 PM org.hibernate.cfg.SettingsFactory createQueryTranslatorFactory
+INFO: Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory
+Mar 9, 2010 11:42:54 PM org.hibernate.hql.ast.ASTQueryTranslatorFactory 
+INFO: Using ASTQueryTranslatorFactory
+Mar 9, 2010 11:42:54 PM org.hibernate.cfg.SettingsFactory buildSettings
+INFO: Query language substitutions: {}
+Mar 9, 2010 11:42:54 PM org.hibernate.cfg.SettingsFactory buildSettings
+INFO: JPA-QL strict compliance: disabled
+Mar 9, 2010 11:42:54 PM org.hibernate.cfg.SettingsFactory buildSettings
+INFO: Second-level cache: enabled
+Mar 9, 2010 11:42:54 PM org.hibernate.cfg.SettingsFactory buildSettings
+INFO: Query cache: disabled
+Mar 9, 2010 11:42:54 PM org.hibernate.cfg.SettingsFactory createCacheProvider
+INFO: Cache provider: org.hibernate.cache.NoCacheProvider
+Mar 9, 2010 11:42:54 PM org.hibernate.cfg.SettingsFactory buildSettings
+INFO: Optimize cache for minimal puts: disabled
+Mar 9, 2010 11:42:54 PM org.hibernate.cfg.SettingsFactory buildSettings
+INFO: Structured second-level cache entries: disabled
+Mar 9, 2010 11:42:54 PM org.hibernate.cfg.SettingsFactory buildSettings
+INFO: Echoing all SQL to stdout
+Mar 9, 2010 11:42:54 PM org.hibernate.cfg.SettingsFactory buildSettings
+INFO: Statistics: disabled
+Mar 9, 2010 11:42:54 PM org.hibernate.cfg.SettingsFactory buildSettings
+INFO: Deleted entity synthetic identifier rollback: disabled
+Mar 9, 2010 11:42:54 PM org.hibernate.cfg.SettingsFactory buildSettings
+INFO: Default entity-mode: pojo
+Mar 9, 2010 11:42:54 PM org.hibernate.cfg.SettingsFactory buildSettings
+INFO: Named query checking : enabled
+Mar 9, 2010 11:42:54 PM org.hibernate.impl.SessionFactoryImpl 
+INFO: building session factory
+Mar 9, 2010 11:42:55 PM org.hibernate.impl.SessionFactoryObjectFactory addInstance
+INFO: Not binding factory to JNDI, no JNDI name configured
+Hibernate: select this_.address as y0_, this_.city as y1_, this_.province as y2_, this_.country as y3_, this_.zipcode as y4_ from sscorp_address_m this_ inner join sscorp_companyProfile_m cp1_ on this_.company_id=cp1_.company_id where this_.company_id=?
+Hibernate: select this_.achievement_name as y0_, this_.achievment_desc as y1_ from sscorp_achievments_m this_ inner join sscorp_companyProfile_m cp1_ on this_.company_id=cp1_.company_id where this_.company_id=?
+Hibernate: select this_.achievement_name as y0_, this_.achievment_desc as y1_ from sscorp_achievments_m this_ inner join sscorp_companyProfile_m cp1_ on this_.company_id=cp1_.company_id where this_.company_id=?
+menuUrl check returned true/home.do
+Hibernate: select this_.address as y0_, this_.city as y1_, this_.province as y2_, this_.country as y3_, this_.zipcode as y4_ from sscorp_address_m this_ inner join sscorp_companyProfile_m cp1_ on this_.company_id=cp1_.company_id where this_.company_id=?
+Hibernate: select this_.achievement_name as y0_, this_.achievment_desc as y1_ from sscorp_achievments_m this_ inner join sscorp_companyProfile_m cp1_ on this_.company_id=cp1_.company_id where this_.company_id=?
+Hibernate: select this_.project_cat_id as project1_9_0_, this_.company_id as company2_9_0_, this_.project_category as project3_9_0_ from sscorp_project_category_m this_ where this_.company_id=? order by this_.project_category asc
+Hibernate: select pc1_.project_cat_id as y0_, this_.project_name as y1_, this_.project_desc as y2_, pc1_.project_category as y3_ from sscorp_projects_m this_ inner join sscorp_project_category_m pc1_ on this_.project_cat_id=pc1_.project_cat_id where pc1_.company_id=? order by pc1_.project_category asc
+67
+Hibernate: select this_.product_name as y0_, this_.product_size as y1_, this_.product_material as y2_, this_.product_finish as y3_, this_.product_photo_attachName as y4_, this_.product_id as y5_ from sscorp_products_m this_ where this_.company_id=? order by this_.product_name asc
+Hibernate: select this_.company_id as company1_0_0_, this_.company_name as company2_0_0_, this_.founder_name as founder3_0_0_, this_.co_founders_name as co4_0_0_, this_.present_CEO as present5_0_0_, this_.company_phone as company6_0_0_, this_.email_id as email7_0_0_, this_.company_logoAttachName as company8_0_0_, this_.company_punchLine as company9_0_0_, this_.about_us as about10_0_0_, this_.fax_number as fax11_0_0_, this_.infrastructure as infrast12_0_0_, this_.achievments_desc as achievm13_0_0_, this_.projects_desc as projects14_0_0_ from sscorp_companyProfile_m this_ where this_.company_id=? and this_.company_name=?
+Hibernate: select this_.menu_name as y0_, this_.menu_url as y1_ from sscorp_menu_m this_ where this_.company_id=? order by this_.menu_position asc
+menuUrl check returned true/home.do
+Hibernate: select this_.address as y0_, this_.city as y1_, this_.province as y2_, this_.country as y3_, this_.zipcode as y4_ from sscorp_address_m this_ inner join sscorp_companyProfile_m cp1_ on this_.company_id=cp1_.company_id where this_.company_id=?
+Hibernate: select this_.achievement_name as y0_, this_.achievment_desc as y1_ from sscorp_achievments_m this_ inner join sscorp_companyProfile_m cp1_ on this_.company_id=cp1_.company_id where this_.company_id=?
+Hibernate: select this_.project_cat_id as project1_9_0_, this_.company_id as company2_9_0_, this_.project_category as project3_9_0_ from sscorp_project_category_m this_ where this_.company_id=? order by this_.project_category asc
+Hibernate: select pc1_.project_cat_id as y0_, this_.project_name as y1_, this_.project_desc as y2_, pc1_.project_category as y3_ from sscorp_projects_m this_ inner join sscorp_project_category_m pc1_ on this_.project_cat_id=pc1_.project_cat_id where pc1_.company_id=? order by pc1_.project_category asc
+67
+Hibernate: select this_.address as y0_, this_.city as y1_, this_.province as y2_, this_.country as y3_, this_.zipcode as y4_ from sscorp_address_m this_ inner join sscorp_companyProfile_m cp1_ on this_.company_id=cp1_.company_id where this_.company_id=?
+Hibernate: select this_.address as y0_, this_.city as y1_, this_.province as y2_, this_.country as y3_, this_.zipcode as y4_ from sscorp_address_m this_ inner join sscorp_companyProfile_m cp1_ on this_.company_id=cp1_.company_id where this_.company_id=?
+Hibernate: select this_.company_id as company1_0_0_, this_.company_name as company2_0_0_, this_.founder_name as founder3_0_0_, this_.co_founders_name as co4_0_0_, this_.present_CEO as present5_0_0_, this_.company_phone as company6_0_0_, this_.email_id as email7_0_0_, this_.company_logoAttachName as company8_0_0_, this_.company_punchLine as company9_0_0_, this_.about_us as about10_0_0_, this_.fax_number as fax11_0_0_, this_.infrastructure as infrast12_0_0_, this_.achievments_desc as achievm13_0_0_, this_.projects_desc as projects14_0_0_ from sscorp_companyProfile_m this_ where this_.company_id=? and this_.company_name=?
+Hibernate: select this_.menu_name as y0_, this_.menu_url as y1_ from sscorp_menu_m this_ where this_.company_id=? order by this_.menu_position asc
+menuUrl check returned true/home.do
+Hibernate: select this_.address as y0_, this_.city as y1_, this_.province as y2_, this_.country as y3_, this_.zipcode as y4_ from sscorp_address_m this_ inner join sscorp_companyProfile_m cp1_ on this_.company_id=cp1_.company_id where this_.company_id=?
+Hibernate: select this_.product_name as y0_, this_.product_size as y1_, this_.product_material as y2_, this_.product_finish as y3_, this_.product_photo_attachName as y4_, this_.product_id as y5_ from sscorp_products_m this_ where this_.company_id=? order by this_.product_name asc
+Hibernate: select this_.product_name as y0_, this_.product_size as y1_, this_.product_material as y2_, this_.product_finish as y3_, this_.product_photo_attachName as y4_, this_.product_id as y5_ from sscorp_products_m this_ where this_.company_id=? order by this_.product_name asc
+menuUrl check returned true/fetchProductDetails.do
+menuUrl check returned true/fetchProductDetails.do
+menuUrl check returned true/fetchProductDetails.do
+menuUrl check returned true/fetchProductDetails.do
+Hibernate: select this_.company_id as company1_0_0_, this_.company_name as company2_0_0_, this_.founder_name as founder3_0_0_, this_.co_founders_name as co4_0_0_, this_.present_CEO as present5_0_0_, this_.company_phone as company6_0_0_, this_.email_id as email7_0_0_, this_.company_logoAttachName as company8_0_0_, this_.company_punchLine as company9_0_0_, this_.about_us as about10_0_0_, this_.fax_number as fax11_0_0_, this_.infrastructure as infrast12_0_0_, this_.achievments_desc as achievm13_0_0_, this_.projects_desc as projects14_0_0_ from sscorp_companyProfile_m this_ where this_.company_id=? and this_.company_name=?
+Hibernate: select this_.menu_name as y0_, this_.menu_url as y1_ from sscorp_menu_m this_ where this_.company_id=? order by this_.menu_position asc
+menuUrl check returned true/home.do
+Hibernate: select this_.address as y0_, this_.city as y1_, this_.province as y2_, this_.country as y3_, this_.zipcode as y4_ from sscorp_address_m this_ inner join sscorp_companyProfile_m cp1_ on this_.company_id=cp1_.company_id where this_.company_id=?
+Hibernate: select this_.achievement_name as y0_, this_.achievment_desc as y1_ from sscorp_achievments_m this_ inner join sscorp_companyProfile_m cp1_ on this_.company_id=cp1_.company_id where this_.company_id=?
+Hibernate: select this_.company_id as company1_0_0_, this_.company_name as company2_0_0_, this_.founder_name as founder3_0_0_, this_.co_founders_name as co4_0_0_, this_.present_CEO as present5_0_0_, this_.company_phone as company6_0_0_, this_.email_id as email7_0_0_, this_.company_logoAttachName as company8_0_0_, this_.company_punchLine as company9_0_0_, this_.about_us as about10_0_0_, this_.fax_number as fax11_0_0_, this_.infrastructure as infrast12_0_0_, this_.achievments_desc as achievm13_0_0_, this_.projects_desc as projects14_0_0_ from sscorp_companyProfile_m this_ where this_.company_id=? and this_.company_name=?
+Hibernate: select this_.menu_name as y0_, this_.menu_url as y1_ from sscorp_menu_m this_ where this_.company_id=? order by this_.menu_position asc
+menuUrl check returned true/home.do
+Hibernate: select this_.address as y0_, this_.city as y1_, this_.province as y2_, this_.country as y3_, this_.zipcode as y4_ from sscorp_address_m this_ inner join sscorp_companyProfile_m cp1_ on this_.company_id=cp1_.company_id where this_.company_id=?
+Hibernate: select this_.address as y0_, this_.city as y1_, this_.province as y2_, this_.country as y3_, this_.zipcode as y4_ from sscorp_address_m this_ inner join sscorp_companyProfile_m cp1_ on this_.company_id=cp1_.company_id where this_.company_id=?
+Hibernate: select this_.project_cat_id as project1_9_0_, this_.company_id as company2_9_0_, this_.project_category as project3_9_0_ from sscorp_project_category_m this_ where this_.company_id=? order by this_.project_category asc
+Hibernate: select pc1_.project_cat_id as y0_, this_.project_name as y1_, this_.project_desc as y2_, pc1_.project_category as y3_ from sscorp_projects_m this_ inner join sscorp_project_category_m pc1_ on this_.project_cat_id=pc1_.project_cat_id where pc1_.company_id=? order by pc1_.project_category asc
+67
+Hibernate: select this_.achievement_name as y0_, this_.achievment_desc as y1_ from sscorp_achievments_m this_ inner join sscorp_companyProfile_m cp1_ on this_.company_id=cp1_.company_id where this_.company_id=?
+Hibernate: select this_.achievement_name as y0_, this_.achievment_desc as y1_ from sscorp_achievments_m this_ inner join sscorp_companyProfile_m cp1_ on this_.company_id=cp1_.company_id where this_.company_id=?
+Hibernate: select this_.product_name as y0_, this_.product_size as y1_, this_.product_material as y2_, this_.product_finish as y3_, this_.product_photo_attachName as y4_, this_.product_id as y5_ from sscorp_products_m this_ where this_.company_id=? order by this_.product_name asc
+Hibernate: select this_.product_name as y0_, this_.product_size as y1_, this_.product_material as y2_, this_.product_finish as y3_, this_.product_photo_attachName as y4_, this_.product_id as y5_ from sscorp_products_m this_ where this_.company_id=? order by this_.product_name asc
+Hibernate: select this_.address as y0_, this_.city as y1_, this_.province as y2_, this_.country as y3_, this_.zipcode as y4_ from sscorp_address_m this_ inner join sscorp_companyProfile_m cp1_ on this_.company_id=cp1_.company_id where this_.company_id=?
+Hibernate: select this_.company_id as company1_0_0_, this_.company_name as company2_0_0_, this_.founder_name as founder3_0_0_, this_.co_founders_name as co4_0_0_, this_.present_CEO as present5_0_0_, this_.company_phone as company6_0_0_, this_.email_id as email7_0_0_, this_.company_logoAttachName as company8_0_0_, this_.company_punchLine as company9_0_0_, this_.about_us as about10_0_0_, this_.fax_number as fax11_0_0_, this_.infrastructure as infrast12_0_0_, this_.achievments_desc as achievm13_0_0_, this_.projects_desc as projects14_0_0_ from sscorp_companyProfile_m this_ where this_.company_id=? and this_.company_name=?
+Hibernate: select this_.menu_name as y0_, this_.menu_url as y1_ from sscorp_menu_m this_ where this_.company_id=? order by this_.menu_position asc
+menuUrl check returned true/home.do
+Hibernate: select this_.address as y0_, this_.city as y1_, this_.province as y2_, this_.country as y3_, this_.zipcode as y4_ from sscorp_address_m this_ inner join sscorp_companyProfile_m cp1_ on this_.company_id=cp1_.company_id where this_.company_id=?
+Hibernate: select this_.product_name as y0_, this_.product_size as y1_, this_.product_material as y2_, this_.product_finish as y3_, this_.product_photo_attachName as y4_, this_.product_id as y5_ from sscorp_products_m this_ where this_.company_id=? order by this_.product_name asc
+Hibernate: select this_.product_name as y0_, this_.product_size as y1_, this_.product_material as y2_, this_.product_finish as y3_, this_.product_photo_attachName as y4_, this_.product_id as y5_ from sscorp_products_m this_ where this_.company_id=? order by this_.product_name asc
+Hibernate: select this_.achievement_name as y0_, this_.achievment_desc as y1_ from sscorp_achievments_m this_ inner join sscorp_companyProfile_m cp1_ on this_.company_id=cp1_.company_id where this_.company_id=?
+Hibernate: select this_.project_cat_id as project1_9_0_, this_.company_id as company2_9_0_, this_.project_category as project3_9_0_ from sscorp_project_category_m this_ where this_.company_id=? order by this_.project_category asc
+Hibernate: select pc1_.project_cat_id as y0_, this_.project_name as y1_, this_.project_desc as y2_, pc1_.project_category as y3_ from sscorp_projects_m this_ inner join sscorp_project_category_m pc1_ on this_.project_cat_id=pc1_.project_cat_id where pc1_.company_id=? order by pc1_.project_category asc
+67
+Hibernate: select this_.address as y0_, this_.city as y1_, this_.province as y2_, this_.country as y3_, this_.zipcode as y4_ from sscorp_address_m this_ inner join sscorp_companyProfile_m cp1_ on this_.company_id=cp1_.company_id where this_.company_id=?
+------------------------>>>>/home.do
+Hibernate: select this_.company_id as company1_0_0_, this_.company_name as company2_0_0_, this_.founder_name as founder3_0_0_, this_.co_founders_name as co4_0_0_, this_.present_CEO as present5_0_0_, this_.company_phone as company6_0_0_, this_.email_id as email7_0_0_, this_.company_logoAttachName as company8_0_0_, this_.company_punchLine as company9_0_0_, this_.about_us as about10_0_0_, this_.fax_number as fax11_0_0_, this_.infrastructure as infrast12_0_0_, this_.achievments_desc as achievm13_0_0_, this_.projects_desc as projects14_0_0_ from sscorp_companyProfile_m this_ where this_.company_id=? and this_.company_name=?
+Hibernate: select this_.menu_name as y0_, this_.menu_url as y1_ from sscorp_menu_m this_ where this_.company_id=? order by this_.menu_position asc
+menuUrl check returned true/home.do
+Hibernate: select this_.address as y0_, this_.city as y1_, this_.province as y2_, this_.country as y3_, this_.zipcode as y4_ from sscorp_address_m this_ inner join sscorp_companyProfile_m cp1_ on this_.company_id=cp1_.company_id where this_.company_id=?
+Hibernate: select this_.product_name as y0_, this_.product_size as y1_, this_.product_material as y2_, this_.product_finish as y3_, this_.product_photo_attachName as y4_, this_.product_id as y5_ from sscorp_products_m this_ where this_.company_id=? order by this_.product_name asc
+Hibernate: select this_.product_name as y0_, this_.product_size as y1_, this_.product_material as y2_, this_.product_finish as y3_, this_.product_photo_attachName as y4_, this_.product_id as y5_ from sscorp_products_m this_ where this_.company_id=? order by this_.product_name asc
+Hibernate: select this_.achievement_name as y0_, this_.achievment_desc as y1_ from sscorp_achievments_m this_ inner join sscorp_companyProfile_m cp1_ on this_.company_id=cp1_.company_id where this_.company_id=?
+Hibernate: select this_.project_cat_id as project1_9_0_, this_.company_id as company2_9_0_, this_.project_category as project3_9_0_ from sscorp_project_category_m this_ where this_.company_id=? order by this_.project_category asc
+Hibernate: select pc1_.project_cat_id as y0_, this_.project_name as y1_, this_.project_desc as y2_, pc1_.project_category as y3_ from sscorp_projects_m this_ inner join sscorp_project_category_m pc1_ on this_.project_cat_id=pc1_.project_cat_id where pc1_.company_id=? order by pc1_.project_category asc
+67
+Hibernate: select this_.address as y0_, this_.city as y1_, this_.province as y2_, this_.country as y3_, this_.zipcode as y4_ from sscorp_address_m this_ inner join sscorp_companyProfile_m cp1_ on this_.company_id=cp1_.company_id where this_.company_id=?
+------------------------>>>>/home.do
+Hibernate: select this_.company_id as company1_0_0_, this_.company_name as company2_0_0_, this_.founder_name as founder3_0_0_, this_.co_founders_name as co4_0_0_, this_.present_CEO as present5_0_0_, this_.company_phone as company6_0_0_, this_.email_id as email7_0_0_, this_.company_logoAttachName as company8_0_0_, this_.company_punchLine as company9_0_0_, this_.about_us as about10_0_0_, this_.fax_number as fax11_0_0_, this_.infrastructure as infrast12_0_0_, this_.achievments_desc as achievm13_0_0_, this_.projects_desc as projects14_0_0_ from sscorp_companyProfile_m this_ where this_.company_id=? and this_.company_name=?
+Hibernate: select this_.menu_name as y0_, this_.menu_url as y1_ from sscorp_menu_m this_ where this_.company_id=? order by this_.menu_position asc
+menuUrl check returned true/home.do
+Hibernate: select this_.address as y0_, this_.city as y1_, this_.province as y2_, this_.country as y3_, this_.zipcode as y4_ from sscorp_address_m this_ inner join sscorp_companyProfile_m cp1_ on this_.company_id=cp1_.company_id where this_.company_id=?
+Hibernate: select this_.product_name as y0_, this_.product_size as y1_, this_.product_material as y2_, this_.product_finish as y3_, this_.product_photo_attachName as y4_, this_.product_id as y5_ from sscorp_products_m this_ where this_.company_id=? order by this_.product_name asc
+Hibernate: select this_.product_name as y0_, this_.product_size as y1_, this_.product_material as y2_, this_.product_finish as y3_, this_.product_photo_attachName as y4_, this_.product_id as y5_ from sscorp_products_m this_ where this_.company_id=? order by this_.product_name asc
+Hibernate: select this_.achievement_name as y0_, this_.achievment_desc as y1_ from sscorp_achievments_m this_ inner join sscorp_companyProfile_m cp1_ on this_.company_id=cp1_.company_id where this_.company_id=?
+Hibernate: select this_.project_cat_id as project1_9_0_, this_.company_id as company2_9_0_, this_.project_category as project3_9_0_ from sscorp_project_category_m this_ where this_.company_id=? order by this_.project_category asc
+Hibernate: select pc1_.project_cat_id as y0_, this_.project_name as y1_, this_.project_desc as y2_, pc1_.project_category as y3_ from sscorp_projects_m this_ inner join sscorp_project_category_m pc1_ on this_.project_cat_id=pc1_.project_cat_id where pc1_.company_id=? order by pc1_.project_category asc
+67
+Hibernate: select this_.address as y0_, this_.city as y1_, this_.province as y2_, this_.country as y3_, this_.zipcode as y4_ from sscorp_address_m this_ inner join sscorp_companyProfile_m cp1_ on this_.company_id=cp1_.company_id where this_.company_id=?
+------------------------>>>>/home.do
+------------------------>>>>/home.do
+Hibernate: select this_.company_id as company1_0_0_, this_.company_name as company2_0_0_, this_.founder_name as founder3_0_0_, this_.co_founders_name as co4_0_0_, this_.present_CEO as present5_0_0_, this_.company_phone as company6_0_0_, this_.email_id as email7_0_0_, this_.company_logoAttachName as company8_0_0_, this_.company_punchLine as company9_0_0_, this_.about_us as about10_0_0_, this_.fax_number as fax11_0_0_, this_.infrastructure as infrast12_0_0_, this_.achievments_desc as achievm13_0_0_, this_.projects_desc as projects14_0_0_ from sscorp_companyProfile_m this_ where this_.company_id=? and this_.company_name=?
+Mar 10, 2010 10:33:55 PM org.hibernate.util.JDBCExceptionReporter logExceptions
+WARNING: SQL Error: 0, SQLState: 08S01
+Mar 10, 2010 10:33:55 PM org.hibernate.util.JDBCExceptionReporter logExceptions
+SEVERE: Communications link failure
+
+Last packet sent to the server was 56 ms ago.
+org.hibernate.exception.JDBCConnectionException: could not execute query
+	at org.hibernate.exception.SQLStateConverter.convert(SQLStateConverter.java:74)
+	at org.hibernate.exception.JDBCExceptionHelper.convert(JDBCExceptionHelper.java:43)
+	at org.hibernate.loader.Loader.doList(Loader.java:2223)
+	at org.hibernate.loader.Loader.listIgnoreQueryCache(Loader.java:2104)
+	at org.hibernate.loader.Loader.list(Loader.java:2099)
+	at org.hibernate.loader.criteria.CriteriaLoader.list(CriteriaLoader.java:94)
+	at org.hibernate.impl.SessionImpl.list(SessionImpl.java:1569)
+	at org.hibernate.impl.CriteriaImpl.list(CriteriaImpl.java:283)
+	at org.hibernate.impl.CriteriaImpl.uniqueResult(CriteriaImpl.java:305)
+	at com.bst.sscorp.dbaccess.SSCorpDAO.fetchCompanyProfileInfo(SSCorpDAO.java:288)
+	at com.bst.sscorp.util.SSCorpUtil.fetchCompanyProfileInfo(SSCorpUtil.java:31)
+	at com.bst.sscorp.controller.SSCorpRequestProcessor.process(SSCorpRequestProcessor.java:32)
+	at org.apache.struts.action.ActionServlet.process(ActionServlet.java:1196)
+	at org.apache.struts.action.ActionServlet.doGet(ActionServlet.java:414)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:690)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:803)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:269)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:188)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:213)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:174)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:127)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:117)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:108)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:174)
+	at org.apache.coyote.http11.Http11Processor.process(Http11Processor.java:874)
+	at org.apache.coyote.http11.Http11BaseProtocol$Http11ConnectionHandler.processConnection(Http11BaseProtocol.java:665)
+	at org.apache.tomcat.util.net.PoolTcpEndpoint.processSocket(PoolTcpEndpoint.java:528)
+	at org.apache.tomcat.util.net.LeaderFollowerWorkerThread.runIt(LeaderFollowerWorkerThread.java:81)
+	at org.apache.tomcat.util.threads.ThreadPool$ControlRunnable.run(ThreadPool.java:689)
+	at java.lang.Thread.run(Thread.java:619)
+Caused by: com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+Last packet sent to the server was 56 ms ago.
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:39)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:27)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:513)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:403)
+	at com.mysql.jdbc.SQLError.createCommunicationsException(SQLError.java:1074)
+	at com.mysql.jdbc.MysqlIO.reuseAndReadPacket(MysqlIO.java:2875)
+	at com.mysql.jdbc.MysqlIO.reuseAndReadPacket(MysqlIO.java:2765)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3301)
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:1853)
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:1976)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2503)
+	at com.mysql.jdbc.PreparedStatement.executeInternal(PreparedStatement.java:1737)
+	at com.mysql.jdbc.PreparedStatement.executeQuery(PreparedStatement.java:1888)
+	at org.hibernate.jdbc.AbstractBatcher.getResultSet(AbstractBatcher.java:186)
+	at org.hibernate.loader.Loader.getResultSet(Loader.java:1787)
+	at org.hibernate.loader.Loader.doQuery(Loader.java:674)
+	at org.hibernate.loader.Loader.doQueryAndInitializeNonLazyCollections(Loader.java:236)
+	at org.hibernate.loader.Loader.doList(Loader.java:2220)
+	... 27 more
+Caused by: java.io.EOFException: Can not read response from server. Expected to read 4 bytes, read 0 bytes before connection was unexpectedly lost.
+	at com.mysql.jdbc.MysqlIO.readFully(MysqlIO.java:2334)
+	at com.mysql.jdbc.MysqlIO.reuseAndReadPacket(MysqlIO.java:2776)
+	... 39 more
+java.lang.NullPointerException
+	at com.bst.sscorp.controller.SSCorpRequestProcessor.process(SSCorpRequestProcessor.java:42)
+	at org.apache.struts.action.ActionServlet.process(ActionServlet.java:1196)
+	at org.apache.struts.action.ActionServlet.doGet(ActionServlet.java:414)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:690)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:803)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:269)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:188)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:213)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:174)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:127)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:117)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:108)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:174)
+	at org.apache.coyote.http11.Http11Processor.process(Http11Processor.java:874)
+	at org.apache.coyote.http11.Http11BaseProtocol$Http11ConnectionHandler.processConnection(Http11BaseProtocol.java:665)
+	at org.apache.tomcat.util.net.PoolTcpEndpoint.processSocket(PoolTcpEndpoint.java:528)
+	at org.apache.tomcat.util.net.LeaderFollowerWorkerThread.runIt(LeaderFollowerWorkerThread.java:81)
+	at org.apache.tomcat.util.threads.ThreadPool$ControlRunnable.run(ThreadPool.java:689)
+	at java.lang.Thread.run(Thread.java:619)
+java.lang.NullPointerException
+	at com.bst.sscorp.actionclasses.homepage.HomePageAction.execute(HomePageAction.java:38)
+	at org.apache.struts.action.RequestProcessor.processActionPerform(RequestProcessor.java:431)
+	at org.apache.struts.action.RequestProcessor.process(RequestProcessor.java:236)
+	at com.bst.sscorp.controller.SSCorpRequestProcessor.process(SSCorpRequestProcessor.java:82)
+	at org.apache.struts.action.ActionServlet.process(ActionServlet.java:1196)
+	at org.apache.struts.action.ActionServlet.doGet(ActionServlet.java:414)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:690)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:803)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:269)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:188)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:213)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:174)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:127)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:117)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:108)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:174)
+	at org.apache.coyote.http11.Http11Processor.process(Http11Processor.java:874)
+	at org.apache.coyote.http11.Http11BaseProtocol$Http11ConnectionHandler.processConnection(Http11BaseProtocol.java:665)
+	at org.apache.tomcat.util.net.PoolTcpEndpoint.processSocket(PoolTcpEndpoint.java:528)
+	at org.apache.tomcat.util.net.LeaderFollowerWorkerThread.runIt(LeaderFollowerWorkerThread.java:81)
+	at org.apache.tomcat.util.threads.ThreadPool$ControlRunnable.run(ThreadPool.java:689)
+	at java.lang.Thread.run(Thread.java:619)
+------------------------>>>>/home.do
+Hibernate: select this_.company_id as company1_0_0_, this_.company_name as company2_0_0_, this_.founder_name as founder3_0_0_, this_.co_founders_name as co4_0_0_, this_.present_CEO as present5_0_0_, this_.company_phone as company6_0_0_, this_.email_id as email7_0_0_, this_.company_logoAttachName as company8_0_0_, this_.company_punchLine as company9_0_0_, this_.about_us as about10_0_0_, this_.fax_number as fax11_0_0_, this_.infrastructure as infrast12_0_0_, this_.achievments_desc as achievm13_0_0_, this_.projects_desc as projects14_0_0_ from sscorp_companyProfile_m this_ where this_.company_id=? and this_.company_name=?
+Mar 10, 2010 11:07:29 PM org.hibernate.util.JDBCExceptionReporter logExceptions
+WARNING: SQL Error: 0, SQLState: 08003
+Mar 10, 2010 11:07:30 PM org.hibernate.util.JDBCExceptionReporter logExceptions
+SEVERE: No operations allowed after connection closed.Connection was implicitly closed due to underlying exception/error:
+
+
+** BEGIN NESTED EXCEPTION ** 
+
+com.mysql.jdbc.exceptions.jdbc4.CommunicationsException
+MESSAGE: Communications link failure
+
+Last packet sent to the server was 56 ms ago.
+
+STACKTRACE:
+
+com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+Last packet sent to the server was 56 ms ago.
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:39)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:27)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:513)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:403)
+	at com.mysql.jdbc.SQLError.createCommunicationsException(SQLError.java:1074)
+	at com.mysql.jdbc.MysqlIO.reuseAndReadPacket(MysqlIO.java:2875)
+	at com.mysql.jdbc.MysqlIO.reuseAndReadPacket(MysqlIO.java:2765)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3301)
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:1853)
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:1976)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2503)
+	at com.mysql.jdbc.PreparedStatement.executeInternal(PreparedStatement.java:1737)
+	at com.mysql.jdbc.PreparedStatement.executeQuery(PreparedStatement.java:1888)
+	at org.hibernate.jdbc.AbstractBatcher.getResultSet(AbstractBatcher.java:186)
+	at org.hibernate.loader.Loader.getResultSet(Loader.java:1787)
+	at org.hibernate.loader.Loader.doQuery(Loader.java:674)
+	at org.hibernate.loader.Loader.doQueryAndInitializeNonLazyCollections(Loader.java:236)
+	at org.hibernate.loader.Loader.doList(Loader.java:2220)
+	at org.hibernate.loader.Loader.listIgnoreQueryCache(Loader.java:2104)
+	at org.hibernate.loader.Loader.list(Loader.java:2099)
+	at org.hibernate.loader.criteria.CriteriaLoader.list(CriteriaLoader.java:94)
+	at org.hibernate.impl.SessionImpl.list(SessionImpl.java:1569)
+	at org.hibernate.impl.CriteriaImpl.list(CriteriaImpl.java:283)
+	at org.hibernate.impl.CriteriaImpl.uniqueResult(CriteriaImpl.java:305)
+	at com.bst.sscorp.dbaccess.SSCorpDAO.fetchCompanyProfileInfo(SSCorpDAO.java:288)
+	at com.bst.sscorp.util.SSCorpUtil.fetchCompanyProfileInfo(SSCorpUtil.java:31)
+	at com.bst.sscorp.controller.SSCorpRequestProcessor.process(SSCorpRequestProcessor.java:32)
+	at org.apache.struts.action.ActionServlet.process(ActionServlet.java:1196)
+	at org.apache.struts.action.ActionServlet.doGet(ActionServlet.java:414)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:690)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:803)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:269)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:188)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:213)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:174)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:127)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:117)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:108)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:174)
+	at org.apache.coyote.http11.Http11Processor.process(Http11Processor.java:874)
+	at org.apache.coyote.http11.Http11BaseProtocol$Http11ConnectionHandler.processConnection(Http11BaseProtocol.java:665)
+	at org.apache.tomcat.util.net.PoolTcpEndpoint.processSocket(PoolTcpEndpoint.java:528)
+	at org.apache.tomcat.util.net.LeaderFollowerWorkerThread.runIt(LeaderFollowerWorkerThread.java:81)
+	at org.apache.tomcat.util.threads.ThreadPool$ControlRunnable.run(ThreadPool.java:689)
+	at java.lang.Thread.run(Thread.java:619)
+Caused by: java.io.EOFException: Can not read response from server. Expected to read 4 bytes, read 0 bytes before connection was unexpectedly lost.
+	at com.mysql.jdbc.MysqlIO.readFully(MysqlIO.java:2334)
+	at com.mysql.jdbc.MysqlIO.reuseAndReadPacket(MysqlIO.java:2776)
+	... 39 more
+
+
+** END NESTED EXCEPTION **
+
+
+org.hibernate.exception.JDBCConnectionException: could not execute query
+	at org.hibernate.exception.SQLStateConverter.convert(SQLStateConverter.java:74)
+	at org.hibernate.exception.JDBCExceptionHelper.convert(JDBCExceptionHelper.java:43)
+	at org.hibernate.loader.Loader.doList(Loader.java:2223)
+	at org.hibernate.loader.Loader.listIgnoreQueryCache(Loader.java:2104)
+	at org.hibernate.loader.Loader.list(Loader.java:2099)
+	at org.hibernate.loader.criteria.CriteriaLoader.list(CriteriaLoader.java:94)
+	at org.hibernate.impl.SessionImpl.list(SessionImpl.java:1569)
+	at org.hibernate.impl.CriteriaImpl.list(CriteriaImpl.java:283)
+	at org.hibernate.impl.CriteriaImpl.uniqueResult(CriteriaImpl.java:305)
+	at com.bst.sscorp.dbaccess.SSCorpDAO.fetchCompanyProfileInfo(SSCorpDAO.java:288)
+	at com.bst.sscorp.util.SSCorpUtil.fetchCompanyProfileInfo(SSCorpUtil.java:31)
+	at com.bst.sscorp.controller.SSCorpRequestProcessor.process(SSCorpRequestProcessor.java:32)
+	at org.apache.struts.action.ActionServlet.process(ActionServlet.java:1196)
+	at org.apache.struts.action.ActionServlet.doGet(ActionServlet.java:414)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:690)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:803)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:269)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:188)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:213)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:174)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:127)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:117)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:108)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:174)
+	at org.apache.coyote.http11.Http11Processor.process(Http11Processor.java:874)
+	at org.apache.coyote.http11.Http11BaseProtocol$Http11ConnectionHandler.processConnection(Http11BaseProtocol.java:665)
+	at org.apache.tomcat.util.net.PoolTcpEndpoint.processSocket(PoolTcpEndpoint.java:528)
+	at org.apache.tomcat.util.net.LeaderFollowerWorkerThread.runIt(LeaderFollowerWorkerThread.java:81)
+	at org.apache.tomcat.util.threads.ThreadPool$ControlRunnable.run(ThreadPool.java:689)
+	at java.lang.Thread.run(Thread.java:619)
+Caused by: com.mysql.jdbc.exceptions.jdbc4.MySQLNonTransientConnectionException: No operations allowed after connection closed.Connection was implicitly closed due to underlying exception/error:
+
+
+** BEGIN NESTED EXCEPTION ** 
+
+com.mysql.jdbc.exceptions.jdbc4.CommunicationsException
+MESSAGE: Communications link failure
+
+Last packet sent to the server was 56 ms ago.
+
+STACKTRACE:
+
+com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+Last packet sent to the server was 56 ms ago.
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:39)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:27)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:513)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:403)
+	at com.mysql.jdbc.SQLError.createCommunicationsException(SQLError.java:1074)
+	at com.mysql.jdbc.MysqlIO.reuseAndReadPacket(MysqlIO.java:2875)
+	at com.mysql.jdbc.MysqlIO.reuseAndReadPacket(MysqlIO.java:2765)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3301)
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:1853)
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:1976)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2503)
+	at com.mysql.jdbc.PreparedStatement.executeInternal(PreparedStatement.java:1737)
+	at com.mysql.jdbc.PreparedStatement.executeQuery(PreparedStatement.java:1888)
+	at org.hibernate.jdbc.AbstractBatcher.getResultSet(AbstractBatcher.java:186)
+	at org.hibernate.loader.Loader.getResultSet(Loader.java:1787)
+	at org.hibernate.loader.Loader.doQuery(Loader.java:674)
+	at org.hibernate.loader.Loader.doQueryAndInitializeNonLazyCollections(Loader.java:236)
+	at org.hibernate.loader.Loader.doList(Loader.java:2220)
+	at org.hibernate.loader.Loader.listIgnoreQueryCache(Loader.java:2104)
+	at org.hibernate.loader.Loader.list(Loader.java:2099)
+	at org.hibernate.loader.criteria.CriteriaLoader.list(CriteriaLoader.java:94)
+	at org.hibernate.impl.SessionImpl.list(SessionImpl.java:1569)
+	at org.hibernate.impl.CriteriaImpl.list(CriteriaImpl.java:283)
+	at org.hibernate.impl.CriteriaImpl.uniqueResult(CriteriaImpl.java:305)
+	at com.bst.sscorp.dbaccess.SSCorpDAO.fetchCompanyProfileInfo(SSCorpDAO.java:288)
+	at com.bst.sscorp.util.SSCorpUtil.fetchCompanyProfileInfo(SSCorpUtil.java:31)
+	at com.bst.sscorp.controller.SSCorpRequestProcessor.process(SSCorpRequestProcessor.java:32)
+	at org.apache.struts.action.ActionServlet.process(ActionServlet.java:1196)
+	at org.apache.struts.action.ActionServlet.doGet(ActionServlet.java:414)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:690)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:803)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:269)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:188)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:213)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:174)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:127)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:117)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:108)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:174)
+	at org.apache.coyote.http11.Http11Processor.process(Http11Processor.java:874)
+	at org.apache.coyote.http11.Http11BaseProtocol$Http11ConnectionHandler.processConnection(Http11BaseProtocol.java:665)
+	at org.apache.tomcat.util.net.PoolTcpEndpoint.processSocket(PoolTcpEndpoint.java:528)
+	at org.apache.tomcat.util.net.LeaderFollowerWorkerThread.runIt(LeaderFollowerWorkerThread.java:81)
+	at org.apache.tomcat.util.threads.ThreadPool$ControlRunnable.run(ThreadPool.java:689)
+	at java.lang.Thread.run(Thread.java:619)
+Caused by: java.io.EOFException: Can not read response from server. Expected to read 4 bytes, read 0 bytes before connection was unexpectedly lost.
+	at com.mysql.jdbc.MysqlIO.readFully(MysqlIO.java:2334)
+	at com.mysql.jdbc.MysqlIO.reuseAndReadPacket(MysqlIO.java:2776)
+	... 39 more
+
+
+** END NESTED EXCEPTION **
+
+
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:39)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:27)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:513)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:403)
+	at com.mysql.jdbc.Util.getInstance(Util.java:378)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:985)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:957)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:927)
+	at com.mysql.jdbc.ConnectionImpl.checkClosed(ConnectionImpl.java:1104)
+	at com.mysql.jdbc.ConnectionImpl.prepareStatement(ConnectionImpl.java:3944)
+	at com.mysql.jdbc.ConnectionImpl.prepareStatement(ConnectionImpl.java:3910)
+	at org.hibernate.jdbc.AbstractBatcher.getPreparedStatement(AbstractBatcher.java:505)
+	at org.hibernate.jdbc.AbstractBatcher.getPreparedStatement(AbstractBatcher.java:423)
+	at org.hibernate.jdbc.AbstractBatcher.prepareQueryStatement(AbstractBatcher.java:139)
+	at org.hibernate.loader.Loader.prepareQueryStatement(Loader.java:1547)
+	at org.hibernate.loader.Loader.doQuery(Loader.java:673)
+	at org.hibernate.loader.Loader.doQueryAndInitializeNonLazyCollections(Loader.java:236)
+	at org.hibernate.loader.Loader.doList(Loader.java:2220)
+	... 27 more
+java.lang.NullPointerException
+	at com.bst.sscorp.controller.SSCorpRequestProcessor.process(SSCorpRequestProcessor.java:42)
+	at org.apache.struts.action.ActionServlet.process(ActionServlet.java:1196)
+	at org.apache.struts.action.ActionServlet.doGet(ActionServlet.java:414)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:690)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:803)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:269)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:188)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:213)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:174)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:127)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:117)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:108)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:174)
+	at org.apache.coyote.http11.Http11Processor.process(Http11Processor.java:874)
+	at org.apache.coyote.http11.Http11BaseProtocol$Http11ConnectionHandler.processConnection(Http11BaseProtocol.java:665)
+	at org.apache.tomcat.util.net.PoolTcpEndpoint.processSocket(PoolTcpEndpoint.java:528)
+	at org.apache.tomcat.util.net.LeaderFollowerWorkerThread.runIt(LeaderFollowerWorkerThread.java:81)
+	at org.apache.tomcat.util.threads.ThreadPool$ControlRunnable.run(ThreadPool.java:689)
+	at java.lang.Thread.run(Thread.java:619)
+java.lang.NullPointerException
+	at com.bst.sscorp.actionclasses.homepage.HomePageAction.execute(HomePageAction.java:38)
+	at org.apache.struts.action.RequestProcessor.processActionPerform(RequestProcessor.java:431)
+	at org.apache.struts.action.RequestProcessor.process(RequestProcessor.java:236)
+	at com.bst.sscorp.controller.SSCorpRequestProcessor.process(SSCorpRequestProcessor.java:82)
+	at org.apache.struts.action.ActionServlet.process(ActionServlet.java:1196)
+	at org.apache.struts.action.ActionServlet.doGet(ActionServlet.java:414)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:690)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:803)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:269)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:188)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:213)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:174)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:127)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:117)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:108)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:174)
+	at org.apache.coyote.http11.Http11Processor.process(Http11Processor.java:874)
+	at org.apache.coyote.http11.Http11BaseProtocol$Http11ConnectionHandler.processConnection(Http11BaseProtocol.java:665)
+	at org.apache.tomcat.util.net.PoolTcpEndpoint.processSocket(PoolTcpEndpoint.java:528)
+	at org.apache.tomcat.util.net.LeaderFollowerWorkerThread.runIt(LeaderFollowerWorkerThread.java:81)
+	at org.apache.tomcat.util.threads.ThreadPool$ControlRunnable.run(ThreadPool.java:689)
+	at java.lang.Thread.run(Thread.java:619)
+Hibernate: select this_.company_id as company1_0_0_, this_.company_name as company2_0_0_, this_.founder_name as founder3_0_0_, this_.co_founders_name as co4_0_0_, this_.present_CEO as present5_0_0_, this_.company_phone as company6_0_0_, this_.email_id as email7_0_0_, this_.company_logoAttachName as company8_0_0_, this_.company_punchLine as company9_0_0_, this_.about_us as about10_0_0_, this_.fax_number as fax11_0_0_, this_.infrastructure as infrast12_0_0_, this_.achievments_desc as achievm13_0_0_, this_.projects_desc as projects14_0_0_ from sscorp_companyProfile_m this_ where this_.company_id=? and this_.company_name=?
+Mar 10, 2010 11:08:11 PM org.hibernate.util.JDBCExceptionReporter logExceptions
+WARNING: SQL Error: 0, SQLState: 08003
+Mar 10, 2010 11:08:11 PM org.hibernate.util.JDBCExceptionReporter logExceptions
+SEVERE: No operations allowed after connection closed.Connection was implicitly closed due to underlying exception/error:
+
+
+** BEGIN NESTED EXCEPTION ** 
+
+com.mysql.jdbc.exceptions.jdbc4.CommunicationsException
+MESSAGE: Communications link failure
+
+Last packet sent to the server was 56 ms ago.
+
+STACKTRACE:
+
+com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+Last packet sent to the server was 56 ms ago.
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:39)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:27)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:513)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:403)
+	at com.mysql.jdbc.SQLError.createCommunicationsException(SQLError.java:1074)
+	at com.mysql.jdbc.MysqlIO.reuseAndReadPacket(MysqlIO.java:2875)
+	at com.mysql.jdbc.MysqlIO.reuseAndReadPacket(MysqlIO.java:2765)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3301)
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:1853)
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:1976)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2503)
+	at com.mysql.jdbc.PreparedStatement.executeInternal(PreparedStatement.java:1737)
+	at com.mysql.jdbc.PreparedStatement.executeQuery(PreparedStatement.java:1888)
+	at org.hibernate.jdbc.AbstractBatcher.getResultSet(AbstractBatcher.java:186)
+	at org.hibernate.loader.Loader.getResultSet(Loader.java:1787)
+	at org.hibernate.loader.Loader.doQuery(Loader.java:674)
+	at org.hibernate.loader.Loader.doQueryAndInitializeNonLazyCollections(Loader.java:236)
+	at org.hibernate.loader.Loader.doList(Loader.java:2220)
+	at org.hibernate.loader.Loader.listIgnoreQueryCache(Loader.java:2104)
+	at org.hibernate.loader.Loader.list(Loader.java:2099)
+	at org.hibernate.loader.criteria.CriteriaLoader.list(CriteriaLoader.java:94)
+	at org.hibernate.impl.SessionImpl.list(SessionImpl.java:1569)
+	at org.hibernate.impl.CriteriaImpl.list(CriteriaImpl.java:283)
+	at org.hibernate.impl.CriteriaImpl.uniqueResult(CriteriaImpl.java:305)
+	at com.bst.sscorp.dbaccess.SSCorpDAO.fetchCompanyProfileInfo(SSCorpDAO.java:288)
+	at com.bst.sscorp.util.SSCorpUtil.fetchCompanyProfileInfo(SSCorpUtil.java:31)
+	at com.bst.sscorp.controller.SSCorpRequestProcessor.process(SSCorpRequestProcessor.java:32)
+	at org.apache.struts.action.ActionServlet.process(ActionServlet.java:1196)
+	at org.apache.struts.action.ActionServlet.doGet(ActionServlet.java:414)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:690)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:803)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:269)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:188)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:213)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:174)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:127)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:117)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:108)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:174)
+	at org.apache.coyote.http11.Http11Processor.process(Http11Processor.java:874)
+	at org.apache.coyote.http11.Http11BaseProtocol$Http11ConnectionHandler.processConnection(Http11BaseProtocol.java:665)
+	at org.apache.tomcat.util.net.PoolTcpEndpoint.processSocket(PoolTcpEndpoint.java:528)
+	at org.apache.tomcat.util.net.LeaderFollowerWorkerThread.runIt(LeaderFollowerWorkerThread.java:81)
+	at org.apache.tomcat.util.threads.ThreadPool$ControlRunnable.run(ThreadPool.java:689)
+	at java.lang.Thread.run(Thread.java:619)
+Caused by: java.io.EOFException: Can not read response from server. Expected to read 4 bytes, read 0 bytes before connection was unexpectedly lost.
+	at com.mysql.jdbc.MysqlIO.readFully(MysqlIO.java:2334)
+	at com.mysql.jdbc.MysqlIO.reuseAndReadPacket(MysqlIO.java:2776)
+	... 39 more
+
+
+** END NESTED EXCEPTION **
+
+
+org.hibernate.exception.JDBCConnectionException: could not execute query
+	at org.hibernate.exception.SQLStateConverter.convert(SQLStateConverter.java:74)
+	at org.hibernate.exception.JDBCExceptionHelper.convert(JDBCExceptionHelper.java:43)
+	at org.hibernate.loader.Loader.doList(Loader.java:2223)
+	at org.hibernate.loader.Loader.listIgnoreQueryCache(Loader.java:2104)
+	at org.hibernate.loader.Loader.list(Loader.java:2099)
+	at org.hibernate.loader.criteria.CriteriaLoader.list(CriteriaLoader.java:94)
+	at org.hibernate.impl.SessionImpl.list(SessionImpl.java:1569)
+	at org.hibernate.impl.CriteriaImpl.list(CriteriaImpl.java:283)
+	at org.hibernate.impl.CriteriaImpl.uniqueResult(CriteriaImpl.java:305)
+	at com.bst.sscorp.dbaccess.SSCorpDAO.fetchCompanyProfileInfo(SSCorpDAO.java:288)
+	at com.bst.sscorp.util.SSCorpUtil.fetchCompanyProfileInfo(SSCorpUtil.java:31)
+	at com.bst.sscorp.controller.SSCorpRequestProcessor.process(SSCorpRequestProcessor.java:32)
+	at org.apache.struts.action.ActionServlet.process(ActionServlet.java:1196)
+	at org.apache.struts.action.ActionServlet.doGet(ActionServlet.java:414)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:690)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:803)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:269)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:188)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:213)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:174)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:127)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:117)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:108)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:174)
+	at org.apache.coyote.http11.Http11Processor.process(Http11Processor.java:874)
+	at org.apache.coyote.http11.Http11BaseProtocol$Http11ConnectionHandler.processConnection(Http11BaseProtocol.java:665)
+	at org.apache.tomcat.util.net.PoolTcpEndpoint.processSocket(PoolTcpEndpoint.java:528)
+	at org.apache.tomcat.util.net.LeaderFollowerWorkerThread.runIt(LeaderFollowerWorkerThread.java:81)
+	at org.apache.tomcat.util.threads.ThreadPool$ControlRunnable.run(ThreadPool.java:689)
+	at java.lang.Thread.run(Thread.java:619)
+Caused by: com.mysql.jdbc.exceptions.jdbc4.MySQLNonTransientConnectionException: No operations allowed after connection closed.Connection was implicitly closed due to underlying exception/error:
+
+
+** BEGIN NESTED EXCEPTION ** 
+
+com.mysql.jdbc.exceptions.jdbc4.CommunicationsException
+MESSAGE: Communications link failure
+
+Last packet sent to the server was 56 ms ago.
+
+STACKTRACE:
+
+com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+Last packet sent to the server was 56 ms ago.
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:39)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:27)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:513)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:403)
+	at com.mysql.jdbc.SQLError.createCommunicationsException(SQLError.java:1074)
+	at com.mysql.jdbc.MysqlIO.reuseAndReadPacket(MysqlIO.java:2875)
+	at com.mysql.jdbc.MysqlIO.reuseAndReadPacket(MysqlIO.java:2765)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3301)
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:1853)
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:1976)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2503)
+	at com.mysql.jdbc.PreparedStatement.executeInternal(PreparedStatement.java:1737)
+	at com.mysql.jdbc.PreparedStatement.executeQuery(PreparedStatement.java:1888)
+	at org.hibernate.jdbc.AbstractBatcher.getResultSet(AbstractBatcher.java:186)
+	at org.hibernate.loader.Loader.getResultSet(Loader.java:1787)
+	at org.hibernate.loader.Loader.doQuery(Loader.java:674)
+	at org.hibernate.loader.Loader.doQueryAndInitializeNonLazyCollections(Loader.java:236)
+	at org.hibernate.loader.Loader.doList(Loader.java:2220)
+	at org.hibernate.loader.Loader.listIgnoreQueryCache(Loader.java:2104)
+	at org.hibernate.loader.Loader.list(Loader.java:2099)
+	at org.hibernate.loader.criteria.CriteriaLoader.list(CriteriaLoader.java:94)
+	at org.hibernate.impl.SessionImpl.list(SessionImpl.java:1569)
+	at org.hibernate.impl.CriteriaImpl.list(CriteriaImpl.java:283)
+	at org.hibernate.impl.CriteriaImpl.uniqueResult(CriteriaImpl.java:305)
+	at com.bst.sscorp.dbaccess.SSCorpDAO.fetchCompanyProfileInfo(SSCorpDAO.java:288)
+	at com.bst.sscorp.util.SSCorpUtil.fetchCompanyProfileInfo(SSCorpUtil.java:31)
+	at com.bst.sscorp.controller.SSCorpRequestProcessor.process(SSCorpRequestProcessor.java:32)
+	at org.apache.struts.action.ActionServlet.process(ActionServlet.java:1196)
+	at org.apache.struts.action.ActionServlet.doGet(ActionServlet.java:414)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:690)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:803)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:269)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:188)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:213)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:174)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:127)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:117)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:108)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:174)
+	at org.apache.coyote.http11.Http11Processor.process(Http11Processor.java:874)
+	at org.apache.coyote.http11.Http11BaseProtocol$Http11ConnectionHandler.processConnection(Http11BaseProtocol.java:665)
+	at org.apache.tomcat.util.net.PoolTcpEndpoint.processSocket(PoolTcpEndpoint.java:528)
+	at org.apache.tomcat.util.net.LeaderFollowerWorkerThread.runIt(LeaderFollowerWorkerThread.java:81)
+	at org.apache.tomcat.util.threads.ThreadPool$ControlRunnable.run(ThreadPool.java:689)
+	at java.lang.Thread.run(Thread.java:619)
+Caused by: java.io.EOFException: Can not read response from server. Expected to read 4 bytes, read 0 bytes before connection was unexpectedly lost.
+	at com.mysql.jdbc.MysqlIO.readFully(MysqlIO.java:2334)
+	at com.mysql.jdbc.MysqlIO.reuseAndReadPacket(MysqlIO.java:2776)
+	... 39 more
+
+
+** END NESTED EXCEPTION **
+
+
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:39)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:27)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:513)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:403)
+	at com.mysql.jdbc.Util.getInstance(Util.java:378)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:985)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:957)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:927)
+	at com.mysql.jdbc.ConnectionImpl.checkClosed(ConnectionImpl.java:1104)
+	at com.mysql.jdbc.ConnectionImpl.prepareStatement(ConnectionImpl.java:3944)
+	at com.mysql.jdbc.ConnectionImpl.prepareStatement(ConnectionImpl.java:3910)
+	at org.hibernate.jdbc.AbstractBatcher.getPreparedStatement(AbstractBatcher.java:505)
+	at org.hibernate.jdbc.AbstractBatcher.getPreparedStatement(AbstractBatcher.java:423)
+	at org.hibernate.jdbc.AbstractBatcher.prepareQueryStatement(AbstractBatcher.java:139)
+	at org.hibernate.loader.Loader.prepareQueryStatement(Loader.java:1547)
+	at org.hibernate.loader.Loader.doQuery(Loader.java:673)
+	at org.hibernate.loader.Loader.doQueryAndInitializeNonLazyCollections(Loader.java:236)
+	at org.hibernate.loader.Loader.doList(Loader.java:2220)
+	... 27 more
+java.lang.NullPointerException
+	at com.bst.sscorp.controller.SSCorpRequestProcessor.process(SSCorpRequestProcessor.java:42)
+	at org.apache.struts.action.ActionServlet.process(ActionServlet.java:1196)
+	at org.apache.struts.action.ActionServlet.doGet(ActionServlet.java:414)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:690)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:803)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:269)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:188)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:213)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:174)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:127)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:117)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:108)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:174)
+	at org.apache.coyote.http11.Http11Processor.process(Http11Processor.java:874)
+	at org.apache.coyote.http11.Http11BaseProtocol$Http11ConnectionHandler.processConnection(Http11BaseProtocol.java:665)
+	at org.apache.tomcat.util.net.PoolTcpEndpoint.processSocket(PoolTcpEndpoint.java:528)
+	at org.apache.tomcat.util.net.LeaderFollowerWorkerThread.runIt(LeaderFollowerWorkerThread.java:81)
+	at org.apache.tomcat.util.threads.ThreadPool$ControlRunnable.run(ThreadPool.java:689)
+	at java.lang.Thread.run(Thread.java:619)
+java.lang.NullPointerException
+	at com.bst.sscorp.actionclasses.homepage.HomePageAction.execute(HomePageAction.java:38)
+	at org.apache.struts.action.RequestProcessor.processActionPerform(RequestProcessor.java:431)
+	at org.apache.struts.action.RequestProcessor.process(RequestProcessor.java:236)
+	at com.bst.sscorp.controller.SSCorpRequestProcessor.process(SSCorpRequestProcessor.java:82)
+	at org.apache.struts.action.ActionServlet.process(ActionServlet.java:1196)
+	at org.apache.struts.action.ActionServlet.doGet(ActionServlet.java:414)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:690)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:803)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:269)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:188)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:213)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:174)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:127)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:117)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:108)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:174)
+	at org.apache.coyote.http11.Http11Processor.process(Http11Processor.java:874)
+	at org.apache.coyote.http11.Http11BaseProtocol$Http11ConnectionHandler.processConnection(Http11BaseProtocol.java:665)
+	at org.apache.tomcat.util.net.PoolTcpEndpoint.processSocket(PoolTcpEndpoint.java:528)
+	at org.apache.tomcat.util.net.LeaderFollowerWorkerThread.runIt(LeaderFollowerWorkerThread.java:81)
+	at org.apache.tomcat.util.threads.ThreadPool$ControlRunnable.run(ThreadPool.java:689)
+	at java.lang.Thread.run(Thread.java:619)
+Hibernate: select this_.company_id as company1_0_0_, this_.company_name as company2_0_0_, this_.founder_name as founder3_0_0_, this_.co_founders_name as co4_0_0_, this_.present_CEO as present5_0_0_, this_.company_phone as company6_0_0_, this_.email_id as email7_0_0_, this_.company_logoAttachName as company8_0_0_, this_.company_punchLine as company9_0_0_, this_.about_us as about10_0_0_, this_.fax_number as fax11_0_0_, this_.infrastructure as infrast12_0_0_, this_.achievments_desc as achievm13_0_0_, this_.projects_desc as projects14_0_0_ from sscorp_companyProfile_m this_ where this_.company_id=? and this_.company_name=?
+Mar 10, 2010 11:08:49 PM org.hibernate.util.JDBCExceptionReporter logExceptions
+WARNING: SQL Error: 0, SQLState: 08003
+Mar 10, 2010 11:08:49 PM org.hibernate.util.JDBCExceptionReporter logExceptions
+SEVERE: No operations allowed after connection closed.Connection was implicitly closed due to underlying exception/error:
+
+
+** BEGIN NESTED EXCEPTION ** 
+
+com.mysql.jdbc.exceptions.jdbc4.CommunicationsException
+MESSAGE: Communications link failure
+
+Last packet sent to the server was 56 ms ago.
+
+STACKTRACE:
+
+com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+Last packet sent to the server was 56 ms ago.
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:39)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:27)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:513)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:403)
+	at com.mysql.jdbc.SQLError.createCommunicationsException(SQLError.java:1074)
+	at com.mysql.jdbc.MysqlIO.reuseAndReadPacket(MysqlIO.java:2875)
+	at com.mysql.jdbc.MysqlIO.reuseAndReadPacket(MysqlIO.java:2765)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3301)
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:1853)
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:1976)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2503)
+	at com.mysql.jdbc.PreparedStatement.executeInternal(PreparedStatement.java:1737)
+	at com.mysql.jdbc.PreparedStatement.executeQuery(PreparedStatement.java:1888)
+	at org.hibernate.jdbc.AbstractBatcher.getResultSet(AbstractBatcher.java:186)
+	at org.hibernate.loader.Loader.getResultSet(Loader.java:1787)
+	at org.hibernate.loader.Loader.doQuery(Loader.java:674)
+	at org.hibernate.loader.Loader.doQueryAndInitializeNonLazyCollections(Loader.java:236)
+	at org.hibernate.loader.Loader.doList(Loader.java:2220)
+	at org.hibernate.loader.Loader.listIgnoreQueryCache(Loader.java:2104)
+	at org.hibernate.loader.Loader.list(Loader.java:2099)
+	at org.hibernate.loader.criteria.CriteriaLoader.list(CriteriaLoader.java:94)
+	at org.hibernate.impl.SessionImpl.list(SessionImpl.java:1569)
+	at org.hibernate.impl.CriteriaImpl.list(CriteriaImpl.java:283)
+	at org.hibernate.impl.CriteriaImpl.uniqueResult(CriteriaImpl.java:305)
+	at com.bst.sscorp.dbaccess.SSCorpDAO.fetchCompanyProfileInfo(SSCorpDAO.java:288)
+	at com.bst.sscorp.util.SSCorpUtil.fetchCompanyProfileInfo(SSCorpUtil.java:31)
+	at com.bst.sscorp.controller.SSCorpRequestProcessor.process(SSCorpRequestProcessor.java:32)
+	at org.apache.struts.action.ActionServlet.process(ActionServlet.java:1196)
+	at org.apache.struts.action.ActionServlet.doGet(ActionServlet.java:414)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:690)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:803)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:269)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:188)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:213)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:174)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:127)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:117)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:108)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:174)
+	at org.apache.coyote.http11.Http11Processor.process(Http11Processor.java:874)
+	at org.apache.coyote.http11.Http11BaseProtocol$Http11ConnectionHandler.processConnection(Http11BaseProtocol.java:665)
+	at org.apache.tomcat.util.net.PoolTcpEndpoint.processSocket(PoolTcpEndpoint.java:528)
+	at org.apache.tomcat.util.net.LeaderFollowerWorkerThread.runIt(LeaderFollowerWorkerThread.java:81)
+	at org.apache.tomcat.util.threads.ThreadPool$ControlRunnable.run(ThreadPool.java:689)
+	at java.lang.Thread.run(Thread.java:619)
+Caused by: java.io.EOFException: Can not read response from server. Expected to read 4 bytes, read 0 bytes before connection was unexpectedly lost.
+	at com.mysql.jdbc.MysqlIO.readFully(MysqlIO.java:2334)
+	at com.mysql.jdbc.MysqlIO.reuseAndReadPacket(MysqlIO.java:2776)
+	... 39 more
+
+
+** END NESTED EXCEPTION **
+
+
+org.hibernate.exception.JDBCConnectionException: could not execute query
+	at org.hibernate.exception.SQLStateConverter.convert(SQLStateConverter.java:74)
+	at org.hibernate.exception.JDBCExceptionHelper.convert(JDBCExceptionHelper.java:43)
+	at org.hibernate.loader.Loader.doList(Loader.java:2223)
+	at org.hibernate.loader.Loader.listIgnoreQueryCache(Loader.java:2104)
+	at org.hibernate.loader.Loader.list(Loader.java:2099)
+	at org.hibernate.loader.criteria.CriteriaLoader.list(CriteriaLoader.java:94)
+	at org.hibernate.impl.SessionImpl.list(SessionImpl.java:1569)
+	at org.hibernate.impl.CriteriaImpl.list(CriteriaImpl.java:283)
+	at org.hibernate.impl.CriteriaImpl.uniqueResult(CriteriaImpl.java:305)
+	at com.bst.sscorp.dbaccess.SSCorpDAO.fetchCompanyProfileInfo(SSCorpDAO.java:288)
+	at com.bst.sscorp.util.SSCorpUtil.fetchCompanyProfileInfo(SSCorpUtil.java:31)
+	at com.bst.sscorp.controller.SSCorpRequestProcessor.process(SSCorpRequestProcessor.java:32)
+	at org.apache.struts.action.ActionServlet.process(ActionServlet.java:1196)
+	at org.apache.struts.action.ActionServlet.doGet(ActionServlet.java:414)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:690)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:803)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:269)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:188)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:213)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:174)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:127)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:117)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:108)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:174)
+	at org.apache.coyote.http11.Http11Processor.process(Http11Processor.java:874)
+	at org.apache.coyote.http11.Http11BaseProtocol$Http11ConnectionHandler.processConnection(Http11BaseProtocol.java:665)
+	at org.apache.tomcat.util.net.PoolTcpEndpoint.processSocket(PoolTcpEndpoint.java:528)
+	at org.apache.tomcat.util.net.LeaderFollowerWorkerThread.runIt(LeaderFollowerWorkerThread.java:81)
+	at org.apache.tomcat.util.threads.ThreadPool$ControlRunnable.run(ThreadPool.java:689)
+	at java.lang.Thread.run(Thread.java:619)
+Caused by: com.mysql.jdbc.exceptions.jdbc4.MySQLNonTransientConnectionException: No operations allowed after connection closed.Connection was implicitly closed due to underlying exception/error:
+
+
+** BEGIN NESTED EXCEPTION ** 
+
+com.mysql.jdbc.exceptions.jdbc4.CommunicationsException
+MESSAGE: Communications link failure
+
+Last packet sent to the server was 56 ms ago.
+
+STACKTRACE:
+
+com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+Last packet sent to the server was 56 ms ago.
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:39)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:27)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:513)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:403)
+	at com.mysql.jdbc.SQLError.createCommunicationsException(SQLError.java:1074)
+	at com.mysql.jdbc.MysqlIO.reuseAndReadPacket(MysqlIO.java:2875)
+	at com.mysql.jdbc.MysqlIO.reuseAndReadPacket(MysqlIO.java:2765)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3301)
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:1853)
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:1976)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2503)
+	at com.mysql.jdbc.PreparedStatement.executeInternal(PreparedStatement.java:1737)
+	at com.mysql.jdbc.PreparedStatement.executeQuery(PreparedStatement.java:1888)
+	at org.hibernate.jdbc.AbstractBatcher.getResultSet(AbstractBatcher.java:186)
+	at org.hibernate.loader.Loader.getResultSet(Loader.java:1787)
+	at org.hibernate.loader.Loader.doQuery(Loader.java:674)
+	at org.hibernate.loader.Loader.doQueryAndInitializeNonLazyCollections(Loader.java:236)
+	at org.hibernate.loader.Loader.doList(Loader.java:2220)
+	at org.hibernate.loader.Loader.listIgnoreQueryCache(Loader.java:2104)
+	at org.hibernate.loader.Loader.list(Loader.java:2099)
+	at org.hibernate.loader.criteria.CriteriaLoader.list(CriteriaLoader.java:94)
+	at org.hibernate.impl.SessionImpl.list(SessionImpl.java:1569)
+	at org.hibernate.impl.CriteriaImpl.list(CriteriaImpl.java:283)
+	at org.hibernate.impl.CriteriaImpl.uniqueResult(CriteriaImpl.java:305)
+	at com.bst.sscorp.dbaccess.SSCorpDAO.fetchCompanyProfileInfo(SSCorpDAO.java:288)
+	at com.bst.sscorp.util.SSCorpUtil.fetchCompanyProfileInfo(SSCorpUtil.java:31)
+	at com.bst.sscorp.controller.SSCorpRequestProcessor.process(SSCorpRequestProcessor.java:32)
+	at org.apache.struts.action.ActionServlet.process(ActionServlet.java:1196)
+	at org.apache.struts.action.ActionServlet.doGet(ActionServlet.java:414)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:690)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:803)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:269)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:188)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:213)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:174)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:127)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:117)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:108)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:174)
+	at org.apache.coyote.http11.Http11Processor.process(Http11Processor.java:874)
+	at org.apache.coyote.http11.Http11BaseProtocol$Http11ConnectionHandler.processConnection(Http11BaseProtocol.java:665)
+	at org.apache.tomcat.util.net.PoolTcpEndpoint.processSocket(PoolTcpEndpoint.java:528)
+	at org.apache.tomcat.util.net.LeaderFollowerWorkerThread.runIt(LeaderFollowerWorkerThread.java:81)
+	at org.apache.tomcat.util.threads.ThreadPool$ControlRunnable.run(ThreadPool.java:689)
+	at java.lang.Thread.run(Thread.java:619)
+Caused by: java.io.EOFException: Can not read response from server. Expected to read 4 bytes, read 0 bytes before connection was unexpectedly lost.
+	at com.mysql.jdbc.MysqlIO.readFully(MysqlIO.java:2334)
+	at com.mysql.jdbc.MysqlIO.reuseAndReadPacket(MysqlIO.java:2776)
+	... 39 more
+
+
+** END NESTED EXCEPTION **
+
+
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:39)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:27)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:513)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:403)
+	at com.mysql.jdbc.Util.getInstance(Util.java:378)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:985)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:957)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:927)
+	at com.mysql.jdbc.ConnectionImpl.checkClosed(ConnectionImpl.java:1104)
+	at com.mysql.jdbc.ConnectionImpl.prepareStatement(ConnectionImpl.java:3944)
+	at com.mysql.jdbc.ConnectionImpl.prepareStatement(ConnectionImpl.java:3910)
+	at org.hibernate.jdbc.AbstractBatcher.getPreparedStatement(AbstractBatcher.java:505)
+	at org.hibernate.jdbc.AbstractBatcher.getPreparedStatement(AbstractBatcher.java:423)
+	at org.hibernate.jdbc.AbstractBatcher.prepareQueryStatement(AbstractBatcher.java:139)
+	at org.hibernate.loader.Loader.prepareQueryStatement(Loader.java:1547)
+	at org.hibernate.loader.Loader.doQuery(Loader.java:673)
+	at org.hibernate.loader.Loader.doQueryAndInitializeNonLazyCollections(Loader.java:236)
+	at org.hibernate.loader.Loader.doList(Loader.java:2220)
+	... 27 more
+java.lang.NullPointerException
+	at com.bst.sscorp.controller.SSCorpRequestProcessor.process(SSCorpRequestProcessor.java:42)
+	at org.apache.struts.action.ActionServlet.process(ActionServlet.java:1196)
+	at org.apache.struts.action.ActionServlet.doGet(ActionServlet.java:414)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:690)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:803)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:269)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:188)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:213)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:174)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:127)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:117)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:108)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:174)
+	at org.apache.coyote.http11.Http11Processor.process(Http11Processor.java:874)
+	at org.apache.coyote.http11.Http11BaseProtocol$Http11ConnectionHandler.processConnection(Http11BaseProtocol.java:665)
+	at org.apache.tomcat.util.net.PoolTcpEndpoint.processSocket(PoolTcpEndpoint.java:528)
+	at org.apache.tomcat.util.net.LeaderFollowerWorkerThread.runIt(LeaderFollowerWorkerThread.java:81)
+	at org.apache.tomcat.util.threads.ThreadPool$ControlRunnable.run(ThreadPool.java:689)
+	at java.lang.Thread.run(Thread.java:619)
+java.lang.NullPointerException
+	at com.bst.sscorp.actionclasses.products.FetchProductDetailsAction.execute(FetchProductDetailsAction.java:43)
+	at org.apache.struts.action.RequestProcessor.processActionPerform(RequestProcessor.java:431)
+	at org.apache.struts.action.RequestProcessor.process(RequestProcessor.java:236)
+	at com.bst.sscorp.controller.SSCorpRequestProcessor.process(SSCorpRequestProcessor.java:82)
+	at org.apache.struts.action.ActionServlet.process(ActionServlet.java:1196)
+	at org.apache.struts.action.ActionServlet.doGet(ActionServlet.java:414)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:690)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:803)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:269)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:188)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:213)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:174)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:127)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:117)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:108)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:174)
+	at org.apache.coyote.http11.Http11Processor.process(Http11Processor.java:874)
+	at org.apache.coyote.http11.Http11BaseProtocol$Http11ConnectionHandler.processConnection(Http11BaseProtocol.java:665)
+	at org.apache.tomcat.util.net.PoolTcpEndpoint.processSocket(PoolTcpEndpoint.java:528)
+	at org.apache.tomcat.util.net.LeaderFollowerWorkerThread.runIt(LeaderFollowerWorkerThread.java:81)
+	at org.apache.tomcat.util.threads.ThreadPool$ControlRunnable.run(ThreadPool.java:689)
+	at java.lang.Thread.run(Thread.java:619)
+------------------------>>>>/home.do
+Hibernate: select this_.company_id as company1_0_0_, this_.company_name as company2_0_0_, this_.founder_name as founder3_0_0_, this_.co_founders_name as co4_0_0_, this_.present_CEO as present5_0_0_, this_.company_phone as company6_0_0_, this_.email_id as email7_0_0_, this_.company_logoAttachName as company8_0_0_, this_.company_punchLine as company9_0_0_, this_.about_us as about10_0_0_, this_.fax_number as fax11_0_0_, this_.infrastructure as infrast12_0_0_, this_.achievments_desc as achievm13_0_0_, this_.projects_desc as projects14_0_0_ from sscorp_companyProfile_m this_ where this_.company_id=? and this_.company_name=?
+Mar 10, 2010 11:09:42 PM org.hibernate.util.JDBCExceptionReporter logExceptions
+WARNING: SQL Error: 0, SQLState: 08003
+Mar 10, 2010 11:09:42 PM org.hibernate.util.JDBCExceptionReporter logExceptions
+SEVERE: No operations allowed after connection closed.Connection was implicitly closed due to underlying exception/error:
+
+
+** BEGIN NESTED EXCEPTION ** 
+
+com.mysql.jdbc.exceptions.jdbc4.CommunicationsException
+MESSAGE: Communications link failure
+
+Last packet sent to the server was 56 ms ago.
+
+STACKTRACE:
+
+com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+Last packet sent to the server was 56 ms ago.
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:39)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:27)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:513)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:403)
+	at com.mysql.jdbc.SQLError.createCommunicationsException(SQLError.java:1074)
+	at com.mysql.jdbc.MysqlIO.reuseAndReadPacket(MysqlIO.java:2875)
+	at com.mysql.jdbc.MysqlIO.reuseAndReadPacket(MysqlIO.java:2765)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3301)
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:1853)
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:1976)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2503)
+	at com.mysql.jdbc.PreparedStatement.executeInternal(PreparedStatement.java:1737)
+	at com.mysql.jdbc.PreparedStatement.executeQuery(PreparedStatement.java:1888)
+	at org.hibernate.jdbc.AbstractBatcher.getResultSet(AbstractBatcher.java:186)
+	at org.hibernate.loader.Loader.getResultSet(Loader.java:1787)
+	at org.hibernate.loader.Loader.doQuery(Loader.java:674)
+	at org.hibernate.loader.Loader.doQueryAndInitializeNonLazyCollections(Loader.java:236)
+	at org.hibernate.loader.Loader.doList(Loader.java:2220)
+	at org.hibernate.loader.Loader.listIgnoreQueryCache(Loader.java:2104)
+	at org.hibernate.loader.Loader.list(Loader.java:2099)
+	at org.hibernate.loader.criteria.CriteriaLoader.list(CriteriaLoader.java:94)
+	at org.hibernate.impl.SessionImpl.list(SessionImpl.java:1569)
+	at org.hibernate.impl.CriteriaImpl.list(CriteriaImpl.java:283)
+	at org.hibernate.impl.CriteriaImpl.uniqueResult(CriteriaImpl.java:305)
+	at com.bst.sscorp.dbaccess.SSCorpDAO.fetchCompanyProfileInfo(SSCorpDAO.java:288)
+	at com.bst.sscorp.util.SSCorpUtil.fetchCompanyProfileInfo(SSCorpUtil.java:31)
+	at com.bst.sscorp.controller.SSCorpRequestProcessor.process(SSCorpRequestProcessor.java:32)
+	at org.apache.struts.action.ActionServlet.process(ActionServlet.java:1196)
+	at org.apache.struts.action.ActionServlet.doGet(ActionServlet.java:414)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:690)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:803)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:269)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:188)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:213)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:174)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:127)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:117)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:108)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:174)
+	at org.apache.coyote.http11.Http11Processor.process(Http11Processor.java:874)
+	at org.apache.coyote.http11.Http11BaseProtocol$Http11ConnectionHandler.processConnection(Http11BaseProtocol.java:665)
+	at org.apache.tomcat.util.net.PoolTcpEndpoint.processSocket(PoolTcpEndpoint.java:528)
+	at org.apache.tomcat.util.net.LeaderFollowerWorkerThread.runIt(LeaderFollowerWorkerThread.java:81)
+	at org.apache.tomcat.util.threads.ThreadPool$ControlRunnable.run(ThreadPool.java:689)
+	at java.lang.Thread.run(Thread.java:619)
+Caused by: java.io.EOFException: Can not read response from server. Expected to read 4 bytes, read 0 bytes before connection was unexpectedly lost.
+	at com.mysql.jdbc.MysqlIO.readFully(MysqlIO.java:2334)
+	at com.mysql.jdbc.MysqlIO.reuseAndReadPacket(MysqlIO.java:2776)
+	... 39 more
+
+
+** END NESTED EXCEPTION **
+
+
+org.hibernate.exception.JDBCConnectionException: could not execute query
+	at org.hibernate.exception.SQLStateConverter.convert(SQLStateConverter.java:74)
+	at org.hibernate.exception.JDBCExceptionHelper.convert(JDBCExceptionHelper.java:43)
+	at org.hibernate.loader.Loader.doList(Loader.java:2223)
+	at org.hibernate.loader.Loader.listIgnoreQueryCache(Loader.java:2104)
+	at org.hibernate.loader.Loader.list(Loader.java:2099)
+	at org.hibernate.loader.criteria.CriteriaLoader.list(CriteriaLoader.java:94)
+	at org.hibernate.impl.SessionImpl.list(SessionImpl.java:1569)
+	at org.hibernate.impl.CriteriaImpl.list(CriteriaImpl.java:283)
+	at org.hibernate.impl.CriteriaImpl.uniqueResult(CriteriaImpl.java:305)
+	at com.bst.sscorp.dbaccess.SSCorpDAO.fetchCompanyProfileInfo(SSCorpDAO.java:288)
+	at com.bst.sscorp.util.SSCorpUtil.fetchCompanyProfileInfo(SSCorpUtil.java:31)
+	at com.bst.sscorp.controller.SSCorpRequestProcessor.process(SSCorpRequestProcessor.java:32)
+	at org.apache.struts.action.ActionServlet.process(ActionServlet.java:1196)
+	at org.apache.struts.action.ActionServlet.doGet(ActionServlet.java:414)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:690)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:803)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:269)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:188)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:213)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:174)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:127)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:117)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:108)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:174)
+	at org.apache.coyote.http11.Http11Processor.process(Http11Processor.java:874)
+	at org.apache.coyote.http11.Http11BaseProtocol$Http11ConnectionHandler.processConnection(Http11BaseProtocol.java:665)
+	at org.apache.tomcat.util.net.PoolTcpEndpoint.processSocket(PoolTcpEndpoint.java:528)
+	at org.apache.tomcat.util.net.LeaderFollowerWorkerThread.runIt(LeaderFollowerWorkerThread.java:81)
+	at org.apache.tomcat.util.threads.ThreadPool$ControlRunnable.run(ThreadPool.java:689)
+	at java.lang.Thread.run(Thread.java:619)
+Caused by: com.mysql.jdbc.exceptions.jdbc4.MySQLNonTransientConnectionException: No operations allowed after connection closed.Connection was implicitly closed due to underlying exception/error:
+
+
+** BEGIN NESTED EXCEPTION ** 
+
+com.mysql.jdbc.exceptions.jdbc4.CommunicationsException
+MESSAGE: Communications link failure
+
+Last packet sent to the server was 56 ms ago.
+
+STACKTRACE:
+
+com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+Last packet sent to the server was 56 ms ago.
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:39)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:27)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:513)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:403)
+	at com.mysql.jdbc.SQLError.createCommunicationsException(SQLError.java:1074)
+	at com.mysql.jdbc.MysqlIO.reuseAndReadPacket(MysqlIO.java:2875)
+	at com.mysql.jdbc.MysqlIO.reuseAndReadPacket(MysqlIO.java:2765)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3301)
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:1853)
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:1976)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2503)
+	at com.mysql.jdbc.PreparedStatement.executeInternal(PreparedStatement.java:1737)
+	at com.mysql.jdbc.PreparedStatement.executeQuery(PreparedStatement.java:1888)
+	at org.hibernate.jdbc.AbstractBatcher.getResultSet(AbstractBatcher.java:186)
+	at org.hibernate.loader.Loader.getResultSet(Loader.java:1787)
+	at org.hibernate.loader.Loader.doQuery(Loader.java:674)
+	at org.hibernate.loader.Loader.doQueryAndInitializeNonLazyCollections(Loader.java:236)
+	at org.hibernate.loader.Loader.doList(Loader.java:2220)
+	at org.hibernate.loader.Loader.listIgnoreQueryCache(Loader.java:2104)
+	at org.hibernate.loader.Loader.list(Loader.java:2099)
+	at org.hibernate.loader.criteria.CriteriaLoader.list(CriteriaLoader.java:94)
+	at org.hibernate.impl.SessionImpl.list(SessionImpl.java:1569)
+	at org.hibernate.impl.CriteriaImpl.list(CriteriaImpl.java:283)
+	at org.hibernate.impl.CriteriaImpl.uniqueResult(CriteriaImpl.java:305)
+	at com.bst.sscorp.dbaccess.SSCorpDAO.fetchCompanyProfileInfo(SSCorpDAO.java:288)
+	at com.bst.sscorp.util.SSCorpUtil.fetchCompanyProfileInfo(SSCorpUtil.java:31)
+	at com.bst.sscorp.controller.SSCorpRequestProcessor.process(SSCorpRequestProcessor.java:32)
+	at org.apache.struts.action.ActionServlet.process(ActionServlet.java:1196)
+	at org.apache.struts.action.ActionServlet.doGet(ActionServlet.java:414)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:690)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:803)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:269)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:188)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:213)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:174)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:127)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:117)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:108)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:174)
+	at org.apache.coyote.http11.Http11Processor.process(Http11Processor.java:874)
+	at org.apache.coyote.http11.Http11BaseProtocol$Http11ConnectionHandler.processConnection(Http11BaseProtocol.java:665)
+	at org.apache.tomcat.util.net.PoolTcpEndpoint.processSocket(PoolTcpEndpoint.java:528)
+	at org.apache.tomcat.util.net.LeaderFollowerWorkerThread.runIt(LeaderFollowerWorkerThread.java:81)
+	at org.apache.tomcat.util.threads.ThreadPool$ControlRunnable.run(ThreadPool.java:689)
+	at java.lang.Thread.run(Thread.java:619)
+Caused by: java.io.EOFException: Can not read response from server. Expected to read 4 bytes, read 0 bytes before connection was unexpectedly lost.
+	at com.mysql.jdbc.MysqlIO.readFully(MysqlIO.java:2334)
+	at com.mysql.jdbc.MysqlIO.reuseAndReadPacket(MysqlIO.java:2776)
+	... 39 more
+
+
+** END NESTED EXCEPTION **
+
+
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:39)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:27)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:513)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:403)
+	at com.mysql.jdbc.Util.getInstance(Util.java:378)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:985)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:957)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:927)
+	at com.mysql.jdbc.ConnectionImpl.checkClosed(ConnectionImpl.java:1104)
+	at com.mysql.jdbc.ConnectionImpl.prepareStatement(ConnectionImpl.java:3944)
+	at com.mysql.jdbc.ConnectionImpl.prepareStatement(ConnectionImpl.java:3910)
+	at org.hibernate.jdbc.AbstractBatcher.getPreparedStatement(AbstractBatcher.java:505)
+	at org.hibernate.jdbc.AbstractBatcher.getPreparedStatement(AbstractBatcher.java:423)
+	at org.hibernate.jdbc.AbstractBatcher.prepareQueryStatement(AbstractBatcher.java:139)
+	at org.hibernate.loader.Loader.prepareQueryStatement(Loader.java:1547)
+	at org.hibernate.loader.Loader.doQuery(Loader.java:673)
+	at org.hibernate.loader.Loader.doQueryAndInitializeNonLazyCollections(Loader.java:236)
+	at org.hibernate.loader.Loader.doList(Loader.java:2220)
+	... 27 more
+java.lang.NullPointerException
+	at com.bst.sscorp.controller.SSCorpRequestProcessor.process(SSCorpRequestProcessor.java:42)
+	at org.apache.struts.action.ActionServlet.process(ActionServlet.java:1196)
+	at org.apache.struts.action.ActionServlet.doGet(ActionServlet.java:414)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:690)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:803)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:269)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:188)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:213)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:174)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:127)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:117)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:108)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:174)
+	at org.apache.coyote.http11.Http11Processor.process(Http11Processor.java:874)
+	at org.apache.coyote.http11.Http11BaseProtocol$Http11ConnectionHandler.processConnection(Http11BaseProtocol.java:665)
+	at org.apache.tomcat.util.net.PoolTcpEndpoint.processSocket(PoolTcpEndpoint.java:528)
+	at org.apache.tomcat.util.net.LeaderFollowerWorkerThread.runIt(LeaderFollowerWorkerThread.java:81)
+	at org.apache.tomcat.util.threads.ThreadPool$ControlRunnable.run(ThreadPool.java:689)
+	at java.lang.Thread.run(Thread.java:619)
+java.lang.NullPointerException
+	at com.bst.sscorp.actionclasses.homepage.HomePageAction.execute(HomePageAction.java:38)
+	at org.apache.struts.action.RequestProcessor.processActionPerform(RequestProcessor.java:431)
+	at org.apache.struts.action.RequestProcessor.process(RequestProcessor.java:236)
+	at com.bst.sscorp.controller.SSCorpRequestProcessor.process(SSCorpRequestProcessor.java:82)
+	at org.apache.struts.action.ActionServlet.process(ActionServlet.java:1196)
+	at org.apache.struts.action.ActionServlet.doGet(ActionServlet.java:414)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:690)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:803)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:269)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:188)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:213)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:174)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:127)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:117)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:108)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:174)
+	at org.apache.coyote.http11.Http11Processor.process(Http11Processor.java:874)
+	at org.apache.coyote.http11.Http11BaseProtocol$Http11ConnectionHandler.processConnection(Http11BaseProtocol.java:665)
+	at org.apache.tomcat.util.net.PoolTcpEndpoint.processSocket(PoolTcpEndpoint.java:528)
+	at org.apache.tomcat.util.net.LeaderFollowerWorkerThread.runIt(LeaderFollowerWorkerThread.java:81)
+	at org.apache.tomcat.util.threads.ThreadPool$ControlRunnable.run(ThreadPool.java:689)
+	at java.lang.Thread.run(Thread.java:619)
+

@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 24 Mar, 2010 10:09:47 PM by Hibernate Tools 3.2.1.GA -->
+<hibernate-mapping>
+    <class name="com.bst.sscorp.entities.products.SscorpProductsCategoryM" table="sscorp_products_category_m">
+        <id name="productCatId" type="java.lang.Integer">
+            <column name="product_cat_id" />
+            <generator class="increment" />
+        </id>
+        <many-to-one name="sscorpCompanyProfileM" class="com.bst.sscorp.entities.companyprofile.SscorpCompanyProfileM" fetch="select">
+            <column name="company_id" />
+        </many-to-one>
+        <property name="productCatName" type="string">
+            <column name="product_cat_name" length="200" not-null="true" />
+        </property>
+        <property name="prodCatPhotoAttachName" type="string">
+            <column name="prod_cat_photo_attachName" length="100" />
+        </property>
+        <set name="sscorpProductDetailTs" inverse="true">
+            <key>
+                <column name="product_cat_id" />
+            </key>
+            <one-to-many class="com.bst.sscorp.entities.products.SscorpProductDetailT" />
+        </set>
+    </class>
+</hibernate-mapping>

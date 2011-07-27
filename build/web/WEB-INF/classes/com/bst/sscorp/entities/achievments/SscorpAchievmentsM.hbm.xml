@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 23 Dec, 2009 12:06:02 AM by Hibernate Tools 3.2.1.GA -->
+<hibernate-mapping>
+  <class name="com.bst.sscorp.entities.achievments.SscorpAchievmentsM" table="sscorp_achievments_m">
+    <id name="achievmentId" type="java.lang.Integer">
+      <column name="achievment_id"/>
+      <generator class="increment"/>
+    </id>
+    <many-to-one class="com.bst.sscorp.entities.companyprofile.SscorpCompanyProfileM" fetch="select" name="sscorpCompanyProfileM">
+      <column name="company_id"/>
+    </many-to-one>
+    <property name="achievementName" type="string">
+      <column length="100" name="achievement_name" not-null="true"/>
+    </property>
+    <property name="superDesc" type="string">
+      <column length="10000" name="super_desc"/>
+    </property>
+    <property name="achievmentDesc" type="string">
+      <column length="10000" name="achievment_desc" not-null="true"/>
+    </property>
+  </class>
+</hibernate-mapping>
